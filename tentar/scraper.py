@@ -54,6 +54,7 @@ def parse_historico(soup):
   dados = {
       "legislatura": "XIII LEGISLATURA",
       "periodos": [],
+      "cargos_desempenha": [],
       "comissoes_anteriores": [],
       "comissoes_atuais": [],
       "intervencoes": [],
@@ -73,6 +74,8 @@ def parse_historico(soup):
       dados["legislatura"] = linha
     elif "PERÍODO(S) DO EXERCÍCIO" in upper:
       secao = "periodos"
+    elif "CARGOS QUE DESEMPENHA" in upper:
+      secao = "cargos_desempenha"
     elif "COMISSÕES A QUE PERTENCEU" in upper:
       secao = "comissoes_anteriores"
     elif "COMISSÕES A QUE PERTENCE" in upper:
@@ -81,7 +84,12 @@ def parse_historico(soup):
       secao = "intervencoes"
     elif upper == "REQUERIMENTOS":
       secao = "requerimentos"
-    elif secao in ("periodos", "comissoes_anteriores", "comissoes_atuais"):
+    elif secao in (
+        "periodos",
+        "cargos_desempenha",
+        "comissoes_anteriores",
+        "comissoes_atuais",
+    ):
       if (
           not linha.startswith("Grupo Parlamentar")
           and not linha.startswith("Circulo")
@@ -89,7 +97,6 @@ def parse_historico(soup):
       ):
         dados[secao].append(linha.lstrip("- ").strip())
     elif secao in ("intervencoes", "requerimentos"):
-      # Procura padrão de data DD/MM/AAAA seguida do assunto
       if re.match(r"^\d{2}/\d{2}/\d{4}$", linha) and i + 1 < len(linhas):
         dados[secao].append({"data": linha, "assunto": linhas[i + 1]})
         i += 1
@@ -98,20 +105,24 @@ def parse_historico(soup):
   return dados
 
 
+
 def parse_pares_chave_valor(soup, mapa_campos):
   resultado = {v: "" for v in mapa_campos.values()}
   linhas = [limpar_texto(l) for l in soup.get_text("\n").split("\n")]
   linhas = [l for l in linhas if l]
+  rotulos_lower = {r.lower() for r in mapa_campos.keys()}
 
   for idx, linha in enumerate(linhas):
     for rotulo, chave in mapa_campos.items():
       if linha.lower() == rotulo.lower():
-        # O valor está na linha seguinte, desde que não seja outro rótulo conhecido
-        if idx + 1 < len(linhas):
-          prox = linhas[idx + 1]
-          if prox.lower() not in [r.lower() for r in mapa_campos.keys()]:
-            resultado[chave] = prox
+        valores = []
+        j = idx + 1
+        while j < len(linhas) and linhas[j].lower() not in rotulos_lower:
+          valores.append(linhas[j])
+          j += 1
+        resultado[chave] = " ; ".join(valores)
   return resultado
+
 
 
 def parse_biografia(soup):

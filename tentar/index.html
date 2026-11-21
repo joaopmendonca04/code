@@ -3,56 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deputados da ALRAA - Participação Cidadã Açores</title>
-    <!-- Tailwind CSS para um design moderno e limpo -->
+    <title>ALRAA - Deputados e Comissões | Participação Cidadã Açores</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
     <div class="max-w-7xl mx-auto px-4 py-8">
-        <!-- Cabeçalho -->
-        <header class="mb-8 text-center">
-            <h1 class="text-3xl font-bold text-blue-900">Deputados da ALRAA</h1>
-            <p class="text-gray-600 mt-2">Conheça os representantes eleitos na Assembleia Legislativa da Região Autónoma dos Açores.</p>
+        <!-- Cabeçalho + Navegação entre Páginas -->
+        <header class="mb-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-b border-gray-200 pb-6">
+            <div>
+                <h1 class="text-3xl font-bold text-blue-900">ALRAA — Participação Cidadã</h1>
+                <p class="text-gray-600 mt-1">Assembleia Legislativa da Região Autónoma dos Açores</p>
+            </div>
+
+            <nav class="inline-flex rounded-xl bg-gray-100 p-1 border border-gray-200 self-start md:self-auto">
+                <button id="navDeputados" onclick="mudarPagina('deputados')" class="px-4 py-2 rounded-lg text-sm font-bold bg-blue-900 text-white shadow-xs transition-all cursor-pointer">
+                    Deputados
+                </button>
+                <button id="navComissoes" onclick="mudarPagina('comissoes')" class="px-4 py-2 rounded-lg text-sm font-bold text-gray-700 hover:text-gray-900 transition-all cursor-pointer">
+                    Comissões
+                </button>
+            </nav>
         </header>
 
-        <section id="resumoComposicao" class="mb-8 bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
-            <!-- Preenchido dinamicamente via JavaScript -->
-        </section>
+        <!-- ==================== PÁGINA 1: DEPUTADOS ==================== -->
+        <main id="paginaDeputados">
+            <!-- Resumo Dinâmico da Composição -->
+            <section id="resumoComposicao" class="mb-8 bg-white rounded-2xl shadow-sm border border-gray-100 p-6"></section>
 
-        <!-- Filtros -->
-        <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-            <select id="filtroPartido" class="p-2 border rounded-lg shadow-sm bg-white" onchange="filtrarDeputados()">
-                <option value="">Todos os Partidos</option>
-                <option value="PSD">PSD</option>
-                <option value="PS">PS</option>
-                <option value="CH">CHEGA</option>
-                <option value="CDS-PP">CDS-PP</option>
-                <option value="IL">IL</option>
-                <option value="BE">BE</option>
-                <option value="PAN">PAN</option>
-                <option value="PPM">PPM</option>
-            </select>
+            <!-- Filtros -->
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+                <select id="filtroPartido" class="p-2.5 border border-gray-200 rounded-xl shadow-xs bg-white text-sm" onchange="filtrarDeputados()">
+                    <option value="">Todos os Partidos</option>
+                    <option value="PSD">PSD</option>
+                    <option value="PS">PS</option>
+                    <option value="CH">CHEGA</option>
+                    <option value="CDS-PP">CDS-PP</option>
+                    <option value="IL">IL</option>
+                    <option value="BE">BE</option>
+                    <option value="PAN">PAN</option>
+                    <option value="PPM">PPM</option>
+                </select>
 
-            <select id="filtroCirculo" class="p-2 border rounded-lg shadow-sm bg-white" onchange="filtrarDeputados()">
-                <option value="">Todas as Ilhas / Círculos</option>
-                <option value="São Miguel">São Miguel</option>
-                <option value="Terceira">Terceira</option>
-                <option value="Pico">Pico</option>
-                <option value="Faial">Faial</option>
-                <option value="São Jorge">São Jorge</option>
-                <option value="Santa Maria">Santa Maria</option>
-                <option value="Graciosa">Graciosa</option>
-                <option value="Flores">Flores</option>
-                <option value="Corvo">Corvo</option>
-                <option value="Compensação">Círculo de Compensação</option>
-            </select>
-        </div>
+                <select id="filtroCirculo" class="p-2.5 border border-gray-200 rounded-xl shadow-xs bg-white text-sm" onchange="filtrarDeputados()">
+                    <option value="">Todas as Ilhas / Círculos</option>
+                    <option value="São Miguel">São Miguel</option>
+                    <option value="Terceira">Terceira</option>
+                    <option value="Pico">Pico</option>
+                    <option value="Faial">Faial</option>
+                    <option value="São Jorge">São Jorge</option>
+                    <option value="Santa Maria">Santa Maria</option>
+                    <option value="Graciosa">Graciosa</option>
+                    <option value="Flores">Flores</option>
+                    <option value="Corvo">Corvo</option>
+                    <option value="Compensação">Círculo de Compensação</option>
+                </select>
+            </div>
 
-        <!-- Grelha de Deputados (Expandível) -->
-        <div id="grelhaDeputados" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <!-- Os cartões e painéis expansíveis serão injetados aqui via JavaScript -->
-        </div>
+            <!-- Grelha de Deputados -->
+            <div id="grelhaDeputados" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+        </main>
+
+        <!-- ==================== PÁGINA 2: COMISSÕES ==================== -->
+        <main id="paginaComissoes" class="hidden space-y-6">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div>
+                    <p class="text-xs font-bold uppercase tracking-wider text-blue-900">XIII Legislatura — Em Funções</p>
+                    <h2 class="text-2xl font-bold text-gray-900 mt-0.5">Comissões Parlamentares Atuais</h2>
+                </div>
+
+                <input id="pesquisaComissao" type="text" placeholder="Pesquisar comissão ou deputado..." oninput="renderizarComissoes()" class="p-2.5 border border-gray-200 rounded-xl bg-white text-sm w-full md:w-72">
+            </div>
+
+            <div id="listaComissoes" class="space-y-6"></div>
+        </main>
     </div>
 
     <script>
@@ -60,6 +84,8 @@
         let listaAtual = [];
         let deputadoSelecionadoId = null;
         let abaAtiva = "historico";
+        let paginaAtiva = "deputados";
+        let comissaoSelecionadaKey = null;
 
         const coresPartidos = {
             "PSD": "bg-orange-100 text-orange-800 border border-orange-200",
@@ -71,6 +97,27 @@
             "PAN": "bg-emerald-100 text-emerald-800 border border-emerald-200",
             "PPM": "bg-blue-50 text-blue-700 border border-blue-200"
         };
+
+        function mudarPagina(pagina) {
+            paginaAtiva = pagina;
+            const mainDep = document.getElementById("paginaDeputados");
+            const mainCom = document.getElementById("paginaComissoes");
+            const btnDep = document.getElementById("navDeputados");
+            const btnCom = document.getElementById("navComissoes");
+
+            if (pagina === "deputados") {
+                mainDep.classList.remove("hidden");
+                mainCom.classList.add("hidden");
+                btnDep.className = "px-4 py-2 rounded-lg text-sm font-bold bg-blue-900 text-white shadow-xs transition-all cursor-pointer";
+                btnCom.className = "px-4 py-2 rounded-lg text-sm font-bold text-gray-700 hover:text-gray-900 transition-all cursor-pointer";
+            } else {
+                mainDep.classList.add("hidden");
+                mainCom.classList.remove("hidden");
+                btnCom.className = "px-4 py-2 rounded-lg text-sm font-bold bg-blue-900 text-white shadow-xs transition-all cursor-pointer";
+                btnDep.className = "px-4 py-2 rounded-lg text-sm font-bold text-gray-700 hover:text-gray-900 transition-all cursor-pointer";
+                renderizarComissoes();
+            }
+        }
 
         async function carregarDeputados() {
             try {
@@ -399,8 +446,201 @@
             renderizarDeputados(listaAtual);
         }
 
+        // ==================== LÓGICA DE COMISSÕES (APENAS ATUAIS + MESA) ====================
+        function normalizarTexto(str) {
+            return (str || "")
+                .toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .trim();
+        }
+
+        function extrairNomeEPeriodo(entrada) {
+            const idx = entrada.indexOf(" - ");
+            if (idx === -1) return { nome: entrada.trim(), periodo: "" };
+            return {
+                nome: entrada.slice(0, idx).trim(),
+                periodo: entrada.slice(idx + 3).trim()
+            };
+        }
+
+        function detetarCargoNaComissao(listaCargos, nomeComissao) {
+            if (!listaCargos || listaCargos.length === 0) return null;
+
+            const nucleoComissao = normalizarTexto(nomeComissao)
+                .replace(/^comissao\s+(permanente\s+|eventual\s+)?(de\s+|da\s+|do\s+|dos\s+|das\s+)?/, "")
+                .trim();
+
+            for (const item of listaCargos) {
+                const parte = normalizarTexto(item);
+                if (!parte || parte.startsWith("cargos que desempenha")) continue;
+
+                // Verifica se a frase menciona o nome da comissão (ex: "assuntos parlamentares, ambiente...")
+                if (nucleoComissao && parte.includes(nucleoComissao)) {
+                    if (parte.includes("president")) return "presidente";
+                    if (parte.includes("secretari")) return "secretario";
+                    if (parte.includes("relator")) return "relator";
+                }
+            }
+
+            return null;
+        }
+
+        function construirComissoesAtuais() {
+            const mapa = new Map();
+
+            deputados.forEach(dep => {
+                const h = dep.historico || {};
+                const atuais = h.comissoes_atuais || [];
+
+                // Recolhe todos os textos de cargos possíveis (do histórico e da biografia)
+                const listaCargos = [
+                    ...(h.cargos_desempenha || []),
+                    ...(h.periodos || []),
+                    ...((dep.biografia && dep.biografia.cargos) ? dep.biografia.cargos.split(/[;\n]+/) : [])
+                ];
+
+                atuais.forEach(raw => {
+                    const { nome, periodo } = extrairNomeEPeriodo(raw);
+                    if (!nome) return;
+                    const chave = normalizarTexto(nome);
+
+                    if (!mapa.has(chave)) {
+                        mapa.set(chave, {
+                            key: chave,
+                            nome,
+                            membrosMap: new Map()
+                        });
+                    }
+
+                    const com = mapa.get(chave);
+                    if (!com.membrosMap.has(dep.id)) {
+                        const cargo = detetarCargoNaComissao(listaCargos, nome);
+
+                        com.membrosMap.set(dep.id, {
+                            id: dep.id,
+                            nome: dep.nome,
+                            partido: dep.partido,
+                            circulo: dep.circulo,
+                            foto: dep.foto,
+                            periodo,
+                            cargo
+                        });
+                    }
+                });
+            });
+
+            return Array.from(mapa.values()).sort((a, b) => a.nome.localeCompare(b.nome, "pt"));
+        }
+
+
+        function renderizarCartaoMembroComissao(m, tituloCargo = null) {
+            const cor = coresPartidos[m.partido] || "bg-gray-100 text-gray-800 border border-gray-200";
+            const destaqueMesa = Boolean(tituloCargo);
+
+            return `
+                <div class="flex items-center gap-4 p-4 rounded-xl border ${destaqueMesa ? 'bg-blue-50/50 border-blue-200 shadow-xs' : 'bg-gray-50 border-gray-100'}">
+                    <img src="${m.foto}" alt="${m.nome}" class="w-20 h-28 object-cover object-top rounded-xl shadow-xs bg-gray-200 flex-shrink-0">
+                    <div class="min-w-0 flex-1">
+                        ${tituloCargo ? `
+                            <span class="inline-block px-2.5 py-0.5 text-[11px] font-extrabold uppercase tracking-wider rounded-md bg-blue-900 text-white mb-1.5">
+                                ${tituloCargo}
+                            </span>
+                        ` : ''}
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span class="inline-block px-2 py-0.5 text-[11px] font-bold rounded ${cor}">${m.partido}</span>
+                            <span class="text-xs text-gray-500">${m.circulo}</span>
+                        </div>
+                        <p class="text-base font-bold text-gray-900 mt-1 leading-snug">${m.nome}</p>
+                        ${m.periodo ? `<p class="text-xs text-gray-500 mt-1">${m.periodo}</p>` : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderizarComissoes() {
+            const container = document.getElementById("listaComissoes");
+            if (!container) return;
+
+            const termo = normalizarTexto(document.getElementById("pesquisaComissao")?.value || "");
+            let comissoes = construirComissoesAtuais();
+
+            if (termo) {
+                comissoes = comissoes.filter(c => {
+                    const matchNomeCom = normalizarTexto(c.nome).includes(termo);
+                    const matchMembro = Array.from(c.membrosMap.values()).some(m => normalizarTexto(m.nome).includes(termo));
+                    return matchNomeCom || matchMembro;
+                });
+            }
+
+            if (comissoes.length === 0) {
+                container.innerHTML = `<p class="text-center text-gray-500 py-8">Nenhuma comissão atual encontrada.</p>`;
+                return;
+            }
+
+            container.innerHTML = comissoes.map(com => {
+                const todos = Array.from(com.membrosMap.values());
+                const presidente = todos.find(m => m.cargo === "presidente");
+                const secretario = todos.find(m => m.cargo === "secretario");
+                const relator = todos.find(m => m.cargo === "relator");
+
+                const idsMesa = new Set([presidente?.id, secretario?.id, relator?.id].filter(Boolean));
+                const restantes = todos
+                    .filter(m => !idsMesa.has(m.id))
+                    .sort((a, b) => a.nome.localeCompare(b.nome, "pt"));
+
+                return `
+                    <section class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8 space-y-6">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-gray-100 pb-4">
+                            <div>
+                                <span class="inline-block px-2.5 py-0.5 text-[11px] font-bold uppercase rounded-md bg-emerald-100 text-emerald-800 border border-emerald-200 mb-1.5">
+                                    Em Funcionamento
+                                </span>
+                                <h3 class="text-xl font-bold text-gray-900">${com.nome}</h3>
+                            </div>
+                            <span class="text-xs font-bold text-blue-900 bg-blue-50 px-3 py-1.5 rounded-lg self-start sm:self-auto">
+                                ${todos.length} Membros Atuais
+                            </span>
+                        </div>
+
+                        <!-- Mesa da Comissão: Presidente, Secretário e Relator -->
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-blue-900 mb-3">Mesa da Comissão</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                ${presidente
+                                    ? renderizarCartaoMembroComissao(presidente, "Presidente")
+                                    : `<div class="p-4 rounded-xl border border-dashed border-gray-200 bg-gray-50/50 flex items-center justify-center text-xs text-gray-400">Presidente não identificado</div>`}
+                                ${secretario
+                                    ? renderizarCartaoMembroComissao(secretario, "Secretário(a)")
+                                    : `<div class="p-4 rounded-xl border border-dashed border-gray-200 bg-gray-50/50 flex items-center justify-center text-xs text-gray-400">Secretário(a) não identificado(a)</div>`}
+                                ${relator
+                                    ? renderizarCartaoMembroComissao(relator, "Relator(a)")
+                                    : `<div class="p-4 rounded-xl border border-dashed border-gray-200 bg-gray-50/50 flex items-center justify-center text-xs text-gray-400">Relator(a) não identificado(a)</div>`}
+                            </div>
+                        </div>
+
+                        <!-- Restantes Membros Atuais -->
+                        ${restantes.length > 0 ? `
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Restantes Membros (${restantes.length})</h4>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                    ${restantes.map(m => renderizarCartaoMembroComissao(m)).join("")}
+                                </div>
+                            </div>
+                        ` : ''}
+                    </section>
+                `;
+            }).join("");
+        }
+
+
+        function alternarComissao(encodedKey) {
+            const key = decodeURIComponent(encodedKey);
+            comissaoSelecionadaKey = comissaoSelecionadaKey === key ? null : key;
+            renderizarComissoes();
+        }
+
         carregarDeputados();
     </script>
-
 </body>
 </html>

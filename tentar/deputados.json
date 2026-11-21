@@ -10,6 +10,7 @@
             "periodos": [
                 "Desde 22/02/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [],
             "comissoes_atuais": [
                 "Economia - desde 22/02/2024"
@@ -644,8 +645,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Relatora da Comissão Assuntos Parlamentares, Ambiente e Desenvolvimento Sustentável"
             ],
             "comissoes_anteriores": [],
@@ -673,7 +675,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Presidente da Assembleia Geral da Associação Feminina de Santa Cruz das Ribeiras, desde 11/01/2021;",
+            "cargos_sociais": "Presidente da Assembleia Geral da Associação Feminina de Santa Cruz das Ribeiras, desde 11/01/2021; ; Secretária do Conselho para os Assuntos Económicos da Paróquia de Santa Cruz das Ribeiras, desde 04/01/2020; ; Deputada Municipal da Assembleia Municipal das Lajes do Pico, desde 29/12/2021; ; Membro da Comissão Política do PSD da Ilha do Pico, desde 21/12/2024; ; Membro da Mesa do Congresso do PSD - Açores, desde 22/09/2024",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -1287,8 +1289,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Lider da Representação Parlamentar do BE"
             ],
             "comissoes_anteriores": [
@@ -1304,196 +1307,8 @@
             ],
             "intervencoes": [
                 {
-                    "data": "21/10/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Interpelação ao Governo Regional sobre “a Crise da Habitação”."
-                },
-                {
-                    "data": "20/10/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 59/XIII – “Autonomia para contratação de profissionais nos hospitais do Serviço Regional de Saúde”."
-                },
-                {
-                    "data": "16/09/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 48/XIII – “Cria o programa Modelo de Apoio à Vida Independente nos Açores” (BE)."
-                },
-                {
-                    "data": "04/09/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Sessão Solene Evocativa dos 50 Anos da Autonomia."
-                },
-                {
-                    "data": "10/07/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 72/XIII – “Cria a Comissão Técnica Independente - Contaminação (CTI - Contaminação)”."
-                },
-                {
-                    "data": "08/07/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 73/XIII – “Recomenda ao Governo Regional que proceda ao pedido de adesão da região dos Açores aos Serviços Operacionais de Resposta à Poluição por Hidrocarbonetos da Agência Europeia de Segurança Marítima”."
-                },
-                {
-                    "data": "07/07/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 71/XIII – “Cria e regulamenta o programa regional «companhia animal»” (CH). - Apresentado - 07/07/2026ustentável, bem como os princípios reguladores da atividade cinegética” ."
-                },
-                {
-                    "data": "17/06/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 70/XIII – “Acordo Estratégico entre a SATA e a TAP”."
-                },
-                {
-                    "data": "17/06/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 69/XIII – “Manutenção no Grupo SATA da Nova Empresa de Assistência em Escala”."
-                },
-                {
-                    "data": "25/05/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Sessão Solene do Dia da Região Autónoma dos Açores 2025."
-                },
-                {
-                    "data": "19/05/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação da Interpelação ao Governo Regional sobre “O aumento do preço dos combustíveis e o impacto na economia e no custo de vida”."
-                },
-                {
-                    "data": "16/04/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 78/XIII – “Recomenda ao Governo Regional dos Açores a criação do Centro Académico Clínico dos Açores”."
-                },
-                {
-                    "data": "19/03/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Declaração Política."
-                },
-                {
-                    "data": "17/03/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 40/XIII – “Terceira alteração ao Decreto Legislativo Regional n.º 19/2006/A, de 2 de junho, e consagra o direito ao pagamento do subsídio de refeição na Região Autónoma dos Açores”."
-                },
-                {
-                    "data": "26/02/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 42/XIII – “Equiparação dos vencimentos e carreiras dos trabalhadores e trabalhadoras das IPSS e Misericórdias aos da administração pública regional”."
-                },
-                {
-                    "data": "26/02/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 41/XIII – “Equiparação dos vencimentos e carreiras dos técnicos superiores dos quadros das IPSS e Misericórdias que prestam serviço no ISSA ou noutros organismos públicos”."
-                },
-                {
-                    "data": "15/01/2026",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 39/XIII – “Mecanismo de compensação financeira aos pescadores da Região Autónoma dos Açores pela potencial quebra nas capturas resultantes da nova Rede de Áreas Marinhas Protegidas”."
-                },
-                {
-                    "data": "26/11/2025",
-                    "assunto": "Intervenção final do Deputado António Lima do BE - Plano Anual Regional para o ano de 2026 e Orçamento da Região Autónoma dos Açores para o ano de 2026."
-                },
-                {
-                    "data": "16/10/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Declaração Política."
-                },
-                {
-                    "data": "15/10/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 56/XIII – “Recomenda a realização de esforços diplomáticos para regularização dos salários dos trabalhadores das USFORAZORES”."
-                },
-                {
-                    "data": "15/10/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 30/XIII – “Dignificação e Valorização dos Assistentes Técnicos da Subdireção Regional dos Transportes Terrestres dos Açores”."
-                },
-                {
-                    "data": "14/10/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 18/XIII – “Segunda alteração ao Decreto Legislativo Regional n.º 29/2006/A, de 8 de agosto, que estabelece o Regime Jurídico de Apoios a Atividades Culturais”."
-                },
-                {
-                    "data": "11/09/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 33/XIII – “Recomenda ao Governo Regional que diligencie no sentido de garantir a organização dos serviços de obstetrícia/ginecologia dos Hospitais da Região para que o acesso à IVG não seja prejudicado pelo exercício de objeção de consciência”."
-                },
-                {
-                    "data": "09/09/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 34/XIII – “Reconhecimento do tempo de serviço dos trabalhadores integrados no SRS ao abrigo do artigo 11.º do Decreto Legislativo Regional n.º 2/2024/A, de 24 de junho”."
-                },
-                {
-                    "data": "11/07/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 45/XIII – “Pronúncia por iniciativa própria pelo Reconhecimento do Estado da Palestina”."
-                },
-                {
-                    "data": "09/07/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 39/XIII – “Transição dos assistentes operacionais para a nova carreira de técnicos auxiliares de saúde”."
-                },
-                {
-                    "data": "08/07/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação da Interpelação ao Governo Regional sobre o estado da Região."
-                },
-                {
-                    "data": "02/06/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação da Anteproposta de Lei n.º 9/XIII – “Décima alteração à Lei Eleitoral para a Assembleia Legislativa da Região Autónoma dos Açores, aprovada pelo Decreto-Lei n.º 267/80, de 8 de agosto, na sua redação atual”."
-                },
-                {
-                    "data": "09/04/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 20/XIII – “Recomenda ao Governo Regional que crie mecanismos de implementação do projeto-piloto da semana de quatro dias de trabalho, no setor público e no setor privado, com a respetiva redução do horário laboral e sem perda de rendimento para os trabalhadores”."
-                },
-                {
-                    "data": "08/04/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 25/XIII – “Segunda alteração ao Decreto Legislativo Regional n.º 18/2016/A, de 29 de setembro - Regime jurídico de licenciamento, organização e fiscalização do exercício da atividade de ama na Região Autónoma dos Açores”."
-                },
-                {
-                    "data": "12/03/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 23/XIII – “Comissão para o Recrutamento de Dirigentes da Administração Pública Regional”."
-                },
-                {
-                    "data": "11/03/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 15/XIII – “Cria a Rede Pública de Creches da Região Autónoma dos Açores”."
-                },
-                {
-                    "data": "12/02/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 11/XIII – “Recomenda ao Governo Regional que proceda à imediata regulamentação e implementação do DLR n.º 35/2023/A, de 17 de outubro - Passes de Mobilidade para Transportes Públicos Coletivos”."
-                },
-                {
-                    "data": "17/01/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 26/XIII – “Contabilização integral do tempo de serviço dos trabalhadores ao abrigo de “Contratos COVID” e conversão dos contratos a termo para contratos sem termo nos Hospitais”."
-                },
-                {
-                    "data": "15/01/2025",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Declaração Política: \"Saúde\"."
-                },
-                {
-                    "data": "10/12/2024",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 9/XIII – “Programa de apoio aos estudantes do ensino superior e ensino superior técnico profissional dos Açores”."
-                },
-                {
-                    "data": "27/11/2024",
-                    "assunto": "Intervenção final do Deputado António Lima do BE - Propostas de Decreto Legislativo Regional - \"Plano Anual Regional para 2025\" e \"Orçamento da Região Autónoma dos Açores para 2025\"."
-                },
-                {
-                    "data": "16/10/2024",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 8/XIII – “Promoção do uso saudável de tecnologias nas escolas”."
-                },
-                {
-                    "data": "12/09/2024",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Declaração Política: O desprezo do governo regional da coligação pela cultura é desolador."
-                },
-                {
-                    "data": "10/09/2024",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 4/XIII – “Estabelece um regime excecional de constituição de relações jurídicas de emprego no Serviço Regional de Saúde”."
-                },
-                {
-                    "data": "09/07/2024",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Decreto Legislativo Regional n.º 3/XIII – “Programa extraordinário de integração de trabalhadores precários na Administração Pública Regional”."
-                },
-                {
-                    "data": "13/06/2024",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 9/XIII – “Posição da Região Autónoma dos Açores no âmbito do Grupo de Trabalho para a revisão do Subsídio Social de Mobilidade”."
-                },
-                {
-                    "data": "12/06/2024",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Declaração Política: Condições de trabalho e o combate à precariedade."
-                },
-                {
-                    "data": "23/05/2024",
-                    "assunto": "Intervenção final do Deputado António Lima do BE - Propostas de Decreto Legislativo Regional - \"Orientações de médio prazo 2024/2028\", \"Plano Anual Regional para 2024\" e \"Orçamento da Região Autónoma dos Açores para 2024\"."
-                },
-                {
-                    "data": "20/05/2024",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Sessão Solene do Dia da Região Autónoma dos Açores 2024."
-                },
-                {
-                    "data": "11/04/2024",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação do Projeto de Resolução n.º 5/XIII – “Recomenda ao Governo Regional que anule o processo de privatização da SATA Internacional - Azores Airlines”."
-                },
-                {
-                    "data": "10/04/2024",
-                    "assunto": "Intervenção do Deputado António Lima do BE - Apresentação da Anteproposta de Lei n.º 1/XIII – “Simplifica e previne eventuais fraudes na atribuição do Subsídio Social de Mobilidade atribuído a residentes nas Regiões Autónomas”."
-                },
-                {
-                    "data": "15/03/2024",
-                    "assunto": "Intervenção final do Deputado António Lima do BE - Programa do XIV Governo da Região Autónoma dos Açores."
+                    "data": "27/02/2026",
+                    "assunto": "Intervenção do Deputado Duarte Freitas do PSD - Apresentação do Projeto de Decreto Legislativo Regional n.º 52/XIII – “Alteração ao Decreto Legislativo Regional n.º 29/2010/A, de 9 de novembro, que regulamenta o exercício da pesca e da atividade marítima na pesca e define medidas adequadas às especificidades do território marítimo dos Açores”."
                 },
                 {
                     "data": "19/11/2026",
@@ -2119,7 +1934,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Membro da Comissão Coordenadora concelhia de Ponta Delgada do Bloco de Esquerda / Açores, desde 21/06/2024;",
+            "cargos_sociais": "Membro da Comissão Coordenadora concelhia de Ponta Delgada do Bloco de Esquerda / Açores, desde 21/06/2024; ; Membro e Coordenador da Comissão Coordenadora da Ilha de São Miguel do Bloco de Esquerda / Açores, desde 26/06/2024; ; Membro e Coordenador da Comissão Coordenadora Regional do Bloco de Esquerda / Açores, desde 05/06/2023; ; Membro da Mesa Nacional do Bloco de Esquerda, desde 28/05/2023",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -2730,8 +2545,9 @@
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
                 "Desde 20/10/2025",
-                "22/02/2024 a 09/10/2025",
-                "CARGOS QUE DESEMPENHA:",
+                "22/02/2024 a 09/10/2025"
+            ],
+            "cargos_desempenha": [
                 "Lider do Grupo Parlamentar do PS",
                 "Presidente da Comissão Parlamentar de Inquérito ao Incêndio no Hospital Divino Espírito Santo"
             ],
@@ -2744,20 +2560,24 @@
             ],
             "intervencoes": [
                 {
-                    "data": "04/09/2026",
-                    "assunto": "Intervenção do Deputado Berto Messias do PS - Sessão Solene Evocativa dos 50 Anos da Autonomia."
+                    "data": "17/09/2026",
+                    "assunto": "Intervenção da Deputada Cristina Calisto do PS - Apresentação do Projeto de Resolução n.º 77/XIII – “Cedência do Pavilhão Desportivo da Escola Padre João José do Amaral ao Município de Lagoa” (PS)."
                 },
                 {
-                    "data": "25/02/2026",
-                    "assunto": "Intervenção do Deputado Berto Messias do PS - Apresentação do Debate de Urgência sobre “Fim dos apoios no âmbito do regime de financiamento público de iniciativas com interesse para a promoção do destino turístico Açores e dos apoios aos clubes desportivos para promoção turística no âmbito da Palavra Açores”."
+                    "data": "09/12/2025",
+                    "assunto": "Intervenção da Deputada Cristina Calisto do PS - Apresentação do Projeto de Decreto Legislativo Regional n.º 36/XIII – “Regime de comparticipação de dispositivos médicos para a terapêutica da diabetes mellitus tipo 1”."
                 },
                 {
-                    "data": "26/11/2025",
-                    "assunto": "Intervenção final do Deputado Berto Messias do PS - Plano Anual Regional para o ano de 2026 e Orçamento da Região Autónoma dos Açores para o ano de 2026."
+                    "data": "11/09/2025",
+                    "assunto": "Intervenção da Deputada Cristina Calisto do PS - Apresentação do Projeto de Resolução n.º 51/XIII – “Complexo Desportivo do Lajedo deve permanecer público”."
                 },
                 {
-                    "data": "10/09/2025",
-                    "assunto": "Intervenção do Deputado Berto Messias do PS - Apresentação do Debate de Urgência sobre “Incumprimentos do Governo Regional”."
+                    "data": "10/04/2025",
+                    "assunto": "Intervenção da Deputada Cristina Calisto do PS - Apresentação em Plenário do Projeto de Decreto Legislativo Regional n.º 36/XIII – “Regime de comparticipação de dispositivos médicos para a terapêutica da diabetes mellitus tipo 1”."
+                },
+                {
+                    "data": "13/03/2025",
+                    "assunto": "Intervenção da Deputada Cristina Calisto do PS - Apresentação em Plenário do Projeto de Decreto Legislativo Regional n.º 32/XIII – “Cria a Comissão de Recrutamento e Seleção para a Administração Pública Regional dos Açores (CReSAPRA), procedendo à reforma dos procedimentos de recrutamento e seleção para a Administração Regional Autónoma”."
                 },
                 {
                     "data": "18/11/2026",
@@ -3723,7 +3543,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Membro da Comissão Política Nacional do Partido Socialista, desde 07/01/2024;",
+            "cargos_sociais": "Membro da Comissão Política Nacional do Partido Socialista, desde 07/01/2024; ; Membro do Secretariado Regional do Partido Socialista Açores, desde 26/10/2024.",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -4327,6 +4147,7 @@
             "periodos": [
                 "Desde 02/09/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Política Geral - de 01/09/2024 a 30/07/2025"
             ],
@@ -4854,6 +4675,7 @@
             "periodos": [
                 "Desde 22/02/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Política Geral - de 22/02/2024 a 16/03/2026"
             ],
@@ -5492,6 +5314,7 @@
             "periodos": [
                 "Desde 22/02/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Parlamentar de Inquérito ao Incêndio no Hospital Divino Espírito Santo - de 03/02/2025 a 10/07/2025"
             ],
@@ -6912,10 +6735,10 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Gerente, não remunerado, da empresa ATIVALOR – Contabilidade e Consultoria, Unipessoal Lda., desde 14/03/2016;",
+            "cargos_sociais": "Gerente, não remunerado, da empresa ATIVALOR – Contabilidade e Consultoria, Unipessoal Lda., desde 14/03/2016; ; Primeiro Secretário da Direção da Associação de Veteranos do Sporting Clube Ideal, não remunerado, desde 18/11/2023; ; Membro do Secretariado Regional do Partido Socialista dos Açores, desde 26/10/2024; ; Deputado Municipal da Assembleia Municipal da Ribeira Grande, desde 03/11/2025.",
             "apoios": "",
             "servicos": "Diretor Técnico de Contabilidade da empresa ATIVALOR – Contabilidade e Consultoria, Unipessoal Lda.",
-            "sociedades": "Sócio único da empresa ATIVALOR – Contabilidade e Consultoria, Unipessoal Lda., desde 14/03/2016;",
+            "sociedades": "Sócio único da empresa ATIVALOR – Contabilidade e Consultoria, Unipessoal Lda., desde 14/03/2016; ; Membro Estagiário da Ordem dos Revisores Oficiais de Contas, desde 01/10/2025.",
             "outras": "Nada a observar"
         },
         "vencimentos": [
@@ -7526,8 +7349,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 06/01/2025",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 06/01/2025"
+            ],
+            "cargos_desempenha": [
                 "Relatora da Comissão Parlamentar de Inquérito ao Incêndio no Hospital Divino Espírito Santo"
             ],
             "comissoes_anteriores": [
@@ -8452,6 +8276,7 @@
             "periodos": [
                 "Desde 22/02/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Assuntos Sociais - de 22/02/2024 a 09/12/2025"
             ],
@@ -8851,7 +8676,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "2.ª Vogal do Conselho de Administração da CRESAÇOR, desde 12/01/2017;",
+            "cargos_sociais": "2.ª Vogal do Conselho de Administração da CRESAÇOR, desde 12/01/2017; ; Vice-Provedora da Santa Casa da Misericórdia de Santa Cruz da Flores (IPSS), desde 11/03/2024; ; Deputada Municipal da Assembleia Municipal de Santa Cruz das Flores, desde 31/10/2025.",
             "apoios": "",
             "servicos": "Empresária agrícola, em nome individual",
             "sociedades": "Nada a observar",
@@ -9465,8 +9290,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Presidente da Comissão Assuntos Parlamentares, Ambiente e Desenvolvimento Sustentável"
             ],
             "comissoes_anteriores": [
@@ -9502,7 +9328,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Tesoureiro do Conselho Paroquial para os Assuntos Económicos e Administrativos, desde 30/01/2025;",
+            "cargos_sociais": "Tesoureiro do Conselho Paroquial para os Assuntos Económicos e Administrativos, desde 30/01/2025; ; Vogal da Comissão Política da Ilha de São Miguel do PSD/Açores, desde 20/12/2024; ; Vogal da Comissão Política Concelhia de Nordeste do PSD/Açores, desde 20/12/2024.",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -10116,8 +9942,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Relator da Comissão Permanente"
             ],
             "comissoes_anteriores": [],
@@ -10146,7 +9973,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Vice-Presidente da Fundação Maria Isabel do Carmo Medeiros, desde 02/11/2022;",
+            "cargos_sociais": "Vice-Presidente da Fundação Maria Isabel do Carmo Medeiros, desde 02/11/2022; ; Vereador sem pelouro da Câmara Municipal da Povoação, desde 31/10/2025.",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -10764,6 +10591,7 @@
                 "16/06/2024 a 12/03/2026",
                 "22/02/2024 a 05/06/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Permanente - de 22/02/2024 a 12/03/2026",
                 "Economia - de 22/02/2024 a 05/06/2024 - de 17/06/2024 a 12/03/2026",
@@ -11814,22 +11642,22 @@
             "requerimentos": []
         },
         "biografia": {
-            "nome_completo": "Dora Maria Coelho de Castro e Câmara Freitas Valadão",
-            "nascimento": "24/05/1962",
-            "estado_civil": "Viúva",
-            "habilitacoes": "11.º ano de escolaridade",
-            "data_conclusao": "30/06/1978",
-            "profissao": "Empresária Agrícola",
+            "nome_completo": "Francisco Gabriel Meneses de Lima",
+            "nascimento": "26/06/1967",
+            "estado_civil": "Casado",
+            "habilitacoes": "Licenciatura",
+            "data_conclusao": "21/03/1991",
+            "profissao": "",
             "exclusividade": "Não",
-            "cargos": "Nada a observar",
-            "email": "dvaladao@alra.pt"
+            "cargos": "",
+            "email": "flima@alra.pt"
         },
         "interesses": {
-            "cargos_exercidos": "Gerente da Avilajes, Aviário das Lajes Lda., desde 25/09/2014;",
+            "cargos_exercidos": "Gerente da Avilajes, Aviário das Lajes Lda., desde 25/09/2014; ; Administrador da empresa Suinipico, Suinicultura do Pico S.A., desde 06/08/2022; ; Administrador da empresa Açoraves, Produção, Abate e Comercialização de Aves S.A., desde 25/06/2023; ; Gerente da empresa PEARLCASCADE, Lda, desde 05/11/2025.",
             "cargos_sociais": "Nada a observar",
             "apoios": "",
-            "servicos": "Empresário em nome individual, em serviços turísticos de alojamento local, desde 07/12/2021;",
-            "sociedades": "Sócio-Gerente da empresa Terceira-Farma Lda., desde 09/04/2012;",
+            "servicos": "Empresário em nome individual, em serviços turísticos de alojamento local, desde 07/12/2021; ; Diretor clínico da clínica veterinária da empresa Púrpura Vet – Clínica Veterinária Lda., desde 01/09/2022.",
+            "sociedades": "Sócio-Gerente da empresa Terceira-Farma Lda., desde 09/04/2012; ; Acionista e administrador da empresa Terceirense de Rações, Sociedade Produtora de Rações SA, desde 17/08/2020.",
             "outras": "Nada a observar"
         },
         "vencimentos": [
@@ -12401,6 +12229,7 @@
                 "08/06/2025 a 22/02/2026",
                 "22/02/2024 a 18/05/2025"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Economia - de 22/02/2024 a 18/05/2025 - de 08/06/2025 a 22/02/2026 - de 05/03/2026 a 05/07/2026",
                 "Eventual de Acompanhamento de Políticas de Ordenamento do Espaço Marítimo - de 13/05/2024 a 18/05/2025 - de 08/06/2025 a 10/07/2025"
@@ -12841,197 +12670,197 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "2.ª Vogal do Conselho de Administração da CRESAÇOR, desde 12/01/2017;",
+            "cargos_sociais": "Vice-Presidente da Associação Cultural e Desportiva Maré Viva",
             "apoios": "",
-            "servicos": "Empresária agrícola, em nome individual",
-            "sociedades": "Nada a observar",
+            "servicos": "Nada a observar",
+            "sociedades": "Sócio-gerente da empresa Pescas Rita Amaral e Filhos, Lda.; Sócio da empresa Lobeira Restauração e Turismo, Lda.",
             "outras": "Nada a observar"
         },
         "vencimentos": [
             {
                 "ano": "2026",
                 "mes": "Setembro",
-                "liquido": "2 815,82 €",
+                "liquido": "2 780,98 €",
                 "obs": ""
             },
             {
                 "ano": "2026",
                 "mes": "Agosto",
-                "liquido": "2 905,14 €",
+                "liquido": "2 780,98 €",
                 "obs": ""
             },
             {
                 "ano": "2026",
                 "mes": "Julho",
-                "liquido": "2 905,14 €",
+                "liquido": "2 024,43 €",
                 "obs": ""
             },
             {
                 "ano": "2026",
                 "mes": "Junho",
-                "liquido": "5 720,96 €",
+                "liquido": "5 803,92 €",
                 "obs": "Inclui vencimento + vencimento extraordinário de junho"
             },
             {
                 "ano": "2026",
                 "mes": "Maio",
-                "liquido": "2 905,14 €",
+                "liquido": "2 870,30 €",
                 "obs": ""
             },
             {
                 "ano": "2026",
                 "mes": "Abril",
-                "liquido": "2 994,45 €",
+                "liquido": "2 959,62 €",
                 "obs": ""
             },
             {
                 "ano": "2026",
                 "mes": "Março",
-                "liquido": "2 905,14 €",
+                "liquido": "1 934,11 €",
                 "obs": ""
             },
             {
                 "ano": "2026",
                 "mes": "Fevereiro",
-                "liquido": "2 966,42 €",
+                "liquido": "2 928,37 €",
                 "obs": ""
             },
             {
                 "ano": "2026",
                 "mes": "Janeiro",
-                "liquido": "2 843,35 €",
+                "liquido": "2 809,23 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Dezembro",
-                "liquido": "2 843,35 €",
+                "liquido": "2 898,55 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Novembro",
-                "liquido": "5 446,14 €",
+                "liquido": "5 768,89 €",
                 "obs": "Inclui vencimento + vencimento extraordinário de novembro"
             },
             {
                 "ano": "2025",
                 "mes": "Outubro",
-                "liquido": "2 857,19 €",
+                "liquido": "2 809,23 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Setembro",
-                "liquido": "4 007,87 €",
+                "liquido": "3 985,92 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Agosto",
-                "liquido": "2 834,19 €",
+                "liquido": "2 874,55 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Julho",
-                "liquido": "2 931,35 €",
+                "liquido": "2 697,92 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Junho",
-                "liquido": "5 580,06 €",
+                "liquido": "5 633,58 €",
                 "obs": "Inclui vencimento + vencimento extraordinário de junho"
             },
             {
                 "ano": "2025",
                 "mes": "Maio",
-                "liquido": "2 834,19 €",
+                "liquido": "2 786,23 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Abril",
-                "liquido": "2 834,19 €",
+                "liquido": "2 874,55 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Março",
-                "liquido": "2 834,19 €",
+                "liquido": "2 963,87 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Fevereiro",
-                "liquido": "2 900,83 €",
+                "liquido": "2 849,73 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Janeiro",
-                "liquido": "2 773,51 €",
+                "liquido": "2 726,58 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Dezembro",
-                "liquido": "2 652,57 €",
+                "liquido": "2 612,95 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Novembro",
-                "liquido": "4 759,26 €",
+                "liquido": "4 988,31 €",
                 "obs": "Inclui vencimento + vencimento extraordinário de novembro"
             },
             {
                 "ano": "2024",
                 "mes": "Outubro",
-                "liquido": "3 196,88 €",
+                "liquido": "3 073,11 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Setembro",
-                "liquido": "3 028,57 €",
+                "liquido": "2 904,79 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Agosto",
-                "liquido": "2 723,73 €",
+                "liquido": "2 684,11 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Julho",
-                "liquido": "2 723,73 €",
+                "liquido": "2 684,11 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Junho",
-                "liquido": "4 816,40 €",
+                "liquido": "4 960,29 €",
                 "obs": "Inclui vencimento + vencimento extraordinário de junho"
             },
             {
                 "ano": "2024",
                 "mes": "Maio",
-                "liquido": "2 639,57 €",
+                "liquido": "2 599,95 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Abril",
-                "liquido": "2 723,73 €",
+                "liquido": "2 684,11 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Março",
-                "liquido": "3 594,40 €",
+                "liquido": "3 513,08 €",
                 "obs": ""
             }
         ],
@@ -13411,52 +13240,14 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024"
+                "Desde 09/03/2026"
             ],
-            "comissoes_anteriores": [
-                "Economia - de 06/06/2024 a 16/06/2024",
-                "Parlamentar de Inquérito ao Incêndio no Hospital Divino Espírito Santo - de 03/02/2025 a 10/07/2025"
-            ],
+            "cargos_desempenha": [],
+            "comissoes_anteriores": [],
             "comissoes_atuais": [
-                "Assuntos Sociais - desde 22/02/2024"
+                "Assuntos Parlamentares, Ambiente e Desenvolvimento Sustentável - desde 17/03/2026"
             ],
             "intervencoes": [
-                {
-                    "data": "20/10/2026",
-                    "assunto": "Intervenção da Deputada Olivéria Santos do CH - Apresentação do Debate de urgência sobre “Saúde Financeira dos Hospitais da Região e as suas implicações no Serviço Regional de Saúde”."
-                },
-                {
-                    "data": "17/09/2026",
-                    "assunto": "Intervenção da Deputada Hélia Cardoso do CH - Apresentação em Plenário do Projeto de Decreto Legislativo Regional nº 74/XIII – “Primeira alteração ao Decreto Legislativo Regional n.º 18/2025/A, de 14 de julho de 2025, que cria o cheque-dentista” (CH)."
-                },
-                {
-                    "data": "16/09/2026",
-                    "assunto": "Intervenção da Deputada Hélia Cardoso do CH - Apresentação em Plenário do Projeto de Decreto Legislativo Regional n.º 49/XIII – “Institui o Programa «Modelo de Apoio à Vida Independente» na Região Autónoma dos Açores»” (CH)."
-                },
-                {
-                    "data": "09/07/2026",
-                    "assunto": "Intervenção da Deputada Hélia Cardoso do CHEGA - Apresentação em plenário do Projeto de Decreto Legislativo Regional n.º 50/XIII – “Cria o Sistema Regional de Acompanhamento de Processos Administrativos”."
-                },
-                {
-                    "data": "15/04/2026",
-                    "assunto": "Intervenção da Deputada Hélia Cardoso do CH - Apresentação em Plenário do Projeto de Resolução n.º 79/XIII – “Recomenda ao Governo Regional dos Açores que promova a igualdade no acesso aos cuidados de saúde na área da fisioterapia”."
-                },
-                {
-                    "data": "17/03/2026",
-                    "assunto": "Intervenção da Deputada Hélia Cardoso do CH - Apresentação da Anteproposta de Lei n.º 12/XIII – “Segunda alteração à Lei Orgânica n.º 2/2013, de 2 de setembro, que aprova a Lei das Finanças das Regiões Autónomas”."
-                },
-                {
-                    "data": "16/10/2025",
-                    "assunto": "Intervenção da Deputada Hélia Cardoso do CH - Declaração Política."
-                },
-                {
-                    "data": "03/06/2025",
-                    "assunto": "Intervenção da Deputada Hélia Cardoso do CH - Apresentação do Projeto de Decreto Legislativo Regional n.º 33/XIII – “Cria e regulamenta o cheque-dentista”."
-                },
-                {
-                    "data": "08/04/2025",
-                    "assunto": "Intervenção da Deputada Hélia Cardoso do CH - Apresentação do Projeto de Resolução n.º 19/XIII – “Recomenda ao Governo Regional dos Açores a regulamentação dos veículos utilizados no transporte de passageiros em táxi através de nova portaria”."
-                },
                 {
                     "data": "16/11/2026",
                     "assunto": "Esclarecimentos sobre a ausência do Presidente do Conselho de Administração da Visit Azores, o funcionamento dos Órgãos Sociais e a demissão de três Vogais"
@@ -15053,6 +14844,7 @@
             "periodos": [
                 "Desde 09/03/2026"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [],
             "comissoes_atuais": [
                 "Assuntos Parlamentares, Ambiente e Desenvolvimento Sustentável - desde 17/03/2026"
@@ -15073,7 +14865,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Membro do Conselho Regional do PSD Açores;",
+            "cargos_sociais": "Membro do Conselho Regional do PSD Açores; ; Vice-Presidente da Comissão Política de ilha do PSD do Faial; ; Vogal da Assembleia de Freguesia da Junta de Freguesia das Angústias; ; Deputado Municipal da Assembleia Municipal da Horta",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Detentor de 592 ações da Sociedade Vista Alegre",
@@ -15233,6 +15025,7 @@
             "periodos": [
                 "Desde 03/05/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [],
             "comissoes_atuais": [
                 "Assuntos Sociais - desde 25/09/2024"
@@ -16308,8 +16101,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Relatora da Comissão Política Geral"
             ],
             "comissoes_anteriores": [],
@@ -17429,8 +17223,9 @@
             "periodos": [
                 "Desde 05/11/2025",
                 "20/01/2025 a 25/10/2025",
-                "22/02/2024 a 09/01/2025",
-                "CARGOS QUE DESEMPENHA:",
+                "22/02/2024 a 09/01/2025"
+            ],
+            "cargos_desempenha": [
                 "Secretária da Comissão Assuntos Parlamentares, Ambiente e Desenvolvimento Sustentável"
             ],
             "comissoes_anteriores": [],
@@ -18541,8 +18336,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Lider do Grupo Parlamentar do PSD"
             ],
             "comissoes_anteriores": [
@@ -18620,7 +18416,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Deputado Municipal da Assembleia Municipal de Santa Cruz da Graciosa, desde 31/10/2025;",
+            "cargos_sociais": "Deputado Municipal da Assembleia Municipal de Santa Cruz da Graciosa, desde 31/10/2025; ; Vogal do PSD/Açores desde 27/10/2024",
             "apoios": "",
             "servicos": "Advocacia",
             "sociedades": "Nada a observar",
@@ -19237,8 +19033,9 @@
                 "Desde 18/03/2025",
                 "21/02/2025 a 07/03/2025",
                 "17/12/2024 a 10/02/2025",
-                "04/03/2024 a 06/12/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "04/03/2024 a 06/12/2024"
+            ],
+            "cargos_desempenha": [
                 "Lider da Representação Parlamentar do PPM"
             ],
             "comissoes_anteriores": [
@@ -19923,8 +19720,9 @@
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
                 "Desde 08/06/2025",
-                "22/02/2024 a 28/05/2025",
-                "CARGOS QUE DESEMPENHA:",
+                "22/02/2024 a 28/05/2025"
+            ],
+            "cargos_desempenha": [
                 "Vice-Presidente da Mesa da Assembleia Legislativa da Região Autónoma dos Açores"
             ],
             "comissoes_anteriores": [
@@ -20915,8 +20713,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Vice-Presidente da Mesa da Assembleia Legislativa da Região Autónoma dos Açores"
             ],
             "comissoes_anteriores": [
@@ -20928,24 +20727,36 @@
             ],
             "intervencoes": [
                 {
-                    "data": "15/01/2026",
-                    "assunto": "Intervenção da Deputada Joana Pombo Tavares do PS - Apresentação do Projeto de Decreto Legislativo Regional n.º 31/XIII – “Terceira alteração ao Decreto Legislativo Regional n.º 28/2011/A, de 11 de novembro, que estrutura o Parque Marinho dos Açores."
+                    "data": "07/07/2026",
+                    "assunto": "Intervenção do Deputado Joaquim Machado do PSD - Apresentação do Projeto de Decreto Legislativo Regional n.º 54/XIII – “Estatutos dos Membros das Associações de Pais e Encarregados de Educação e suas Federações na Região Autónoma dos Açores” ."
                 },
                 {
-                    "data": "11/02/2025",
-                    "assunto": "Intervenção da Deputada Joana Pombo Tavares do PS - Apresentação do Projeto de Decreto Legislativo Regional n.º 22/XIII – “Segunda alteração ao Decreto Legislativo Regional n.º 18/2004/A, de 13 de maio, que adapta à Região Autónoma dos Açores os decretos-leis n.ºs 550/99, de 15 de dezembro, e 554/99, de 16 de dezembro, que, respetivamente, estabelecem o regime jurídico da atividade de inspeção técnica de veículos a motor e seus reboques e o regime jurídico das inspeções técnicas de automóveis ligeiros, pesados e reboques”."
+                    "data": "21/05/2026",
+                    "assunto": "Intervenção do Deputado Joaquim Machado do PSD - Apresentação da Interpelação ao Governo Regional sobre “Emprego e Qualificação Profissional”."
                 },
                 {
-                    "data": "11/12/2024",
-                    "assunto": "Intervenção da Deputada Joana Pombo Tavares do PS - Apresentação do Projeto de Decreto Legislativo Regional n.º 22/XIII – “Segunda alteração ao Decreto Legislativo Regional n.º 18/2004/A, de 13 de maio, que adapta à Região Autónoma dos Açores os decretos-leis n.ºs 550/99, de 15 de dezembro, e 554/99, de 16 de dezembro, que, respetivamente, estabelecem o regime jurídico da atividade de inspeção técnica de veículos a motor e seus reboques e o regime jurídico das inspeções técnicas de automóveis ligeiros, pesados e reboques”."
+                    "data": "20/03/2026",
+                    "assunto": "Intervenção do Deputado Joaquim Machado do PSD - Apresentação do Projeto de Resolução n.º 75/XIII – “Tarifa de residente nas ligações aéreas entre os Açores e o continente”."
                 },
                 {
-                    "data": "11/09/2024",
-                    "assunto": "Intervenção da Deputada Joana Pombo Tavares do PS - Apresentação do Projeto de Resolução n.º 6/XIII – “Regularizar os contratos e os horários de trabalho dos trabalhadores dos Centros de Interpretação Ambientais dos Açores”."
+                    "data": "14/01/2025",
+                    "assunto": "Intervenção do Deputado Joaquim Machado do PSD - Apresentação da Anteproposta de Lei n.º 8/XIII – “Alteração ao Código do Direito de Autor e dos Direitos Conexos”."
                 },
                 {
-                    "data": "11/04/2024",
-                    "assunto": "Intervenção da Deputada Joana Pombo Tavares do PS - Apresentação em Plenário do Projeto de Resolução n.º 6/XIII – “Regularizar os contratos e os horários de trabalho dos trabalhadores dos Centros de Interpretação Ambientais dos Açores”."
+                    "data": "13/12/2024",
+                    "assunto": "Intervenção do Deputado Joaquim Machado do PSD - Apresentação da Anteproposta de Lei n.º 7/XIII – “Primeira alteração ao Decreto-Lei n.º 41/2015, de 24 de março, que regula a atribuição de um subsídio social de mobilidade aos cidadãos beneficiários, no âmbito dos serviços aéreos entre o continente e a Região Autónoma dos Açores e entre esta e a Região Autónoma da Madeira, prosseguindo objetivos de coesão social e territorial”."
+                },
+                {
+                    "data": "18/10/2024",
+                    "assunto": "Intervenção do Deputado Joaquim Machado do PSD - Apresentação do Projeto de Resolução n.º 17/XIII – “Em defesa da mobilidade dos açorianos”."
+                },
+                {
+                    "data": "10/09/2024",
+                    "assunto": "Intervenção do Deputado Joaquim Machado do PSD - Apresentação do Projeto de Decreto Legislativo Regional n.º 12/XIII – “Primeira Alteração ao Decreto Legislativo Regional n.º 23/2023/A, de 26 de junho - Estatuto da Carreira Docente da Região Autónoma dos Açores”."
+                },
+                {
+                    "data": "11/07/2024",
+                    "assunto": "Intervenção do Deputado Joaquim Machado do PSD - Apresentação do Projeto de Decreto Legislativo Regional n.º 12/XIII – “Primeira Alteração ao Decreto Legislativo Regional n.º 23/2023/A, de 26 de junho - Estatuto da Carreira Docente da Região Autónoma dos Açores”."
                 },
                 {
                     "data": "02/08/2024",
@@ -20967,7 +20778,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Presidente da Comissão Municipal de Toponímia, Distinções Honoríficas e Património Cultural (Ponta Delgada), desde 01/01/2024;",
+            "cargos_sociais": "Presidente da Comissão Municipal de Toponímia, Distinções Honoríficas e Património Cultural (Ponta Delgada), desde 01/01/2024; ; Vogal da Comissão Política Regional do PSD/Açores, desde 27/10/2024; ; Presidente dos Trabalhadores Social Democratas dos Açores, desde 19/10/2025.",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -21581,8 +21392,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Secretário da Comissão Permanente",
                 "Presidente da Comissão Política Geral"
             ],
@@ -22695,19 +22507,22 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
-                "Presidente da Comissão Assuntos Sociais"
+                "Desde 18/09/2025",
+                "19/04/2025 a 07/09/2025",
+                "23/03/2024 a 07/04/2025",
+                "03/03/2024 a 10/03/2024"
             ],
-            "comissoes_anteriores": [
-                "Política Geral - de 22/02/2024 a 09/12/2025",
-                "Grupo de Trabalho - Proposta de Revisão da Lei das Finanças Locais - de 01/08/2025 a 09/12/2025"
-            ],
+            "cargos_desempenha": [],
+            "comissoes_anteriores": [],
             "comissoes_atuais": [
-                "Permanente - desde 09/12/2024",
-                "Assuntos Sociais - desde 10/12/2025"
+                "Política Geral - desde 23/03/2024",
+                "Grupo de Trabalho - Proposta de Revisão da Lei das Finanças Locais - desde 01/08/2025"
             ],
             "intervencoes": [
+                {
+                    "data": "13/12/2024",
+                    "assunto": "Intervenção do Deputado José Leal do PSD - Apresentação do Projeto de Resolução n.º 23/XIII – “Um Quadro Financeiro Plurianual com Políticas de Coesão, Política Agrícola Comum e Política Comum de Pescas, reforçadas e que mantenham as especificidades das Regiões Ultraperiféricas”."
+                },
                 {
                     "data": "16/11/2026",
                     "assunto": "Riscos associados ao funcionamento do Centro de Processamento de Resíduos de São Jorge"
@@ -23592,7 +23407,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Membro da Assembleia Municipal das Lajes das Flores, eleito pelo PS;",
+            "cargos_sociais": "Membro da Assembleia Municipal das Lajes das Flores, eleito pelo PS; ; Membro do Conselho de Ilha das Flores; ; Vice-Presidente da Assembleia Geral da Associação Humanitária dos Bombeiros Voluntários de Santa Cruz das Flores; ; Presidente da Assembleia Geral do Morro Alto Sport Club; ; Maestro da Filarmónica Nª Sª dos Remédios – Fajãzinha; ; Membro da Comissão dos Assuntos Económicos da Igreja da Fajãzinha e do Conselho Pastoral da Ilha das Flores; ; Secretário Coordenador de Ilha do PS (Flores) do Partido Socialista Açores, desde 11/12/2023.",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -24211,6 +24026,7 @@
                 "23/03/2024 a 07/04/2025",
                 "03/03/2024 a 10/03/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [],
             "comissoes_atuais": [
                 "Política Geral - desde 23/03/2024",
@@ -24812,8 +24628,9 @@
                 "17/01/2026 a 05/02/2026",
                 "28/12/2025 a 04/01/2026",
                 "15/12/2025 a 16/12/2025",
-                "22/02/2024 a 04/12/2025",
-                "CARGOS QUE DESEMPENHA:",
+                "22/02/2024 a 04/12/2025"
+            ],
+            "cargos_desempenha": [
                 "Secretário da Comissão Eventual de Acompanhamento de Políticas de Ordenamento do Espaço Marítimo"
             ],
             "comissoes_anteriores": [
@@ -25691,8 +25508,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Lider do Grupo Parlamentar do CH"
             ],
             "comissoes_anteriores": [],
@@ -25701,8 +25519,76 @@
             ],
             "intervencoes": [
                 {
-                    "data": "13/12/2024",
-                    "assunto": "Intervenção do Deputado José Leal do PSD - Apresentação do Projeto de Resolução n.º 23/XIII – “Um Quadro Financeiro Plurianual com Políticas de Coesão, Política Agrícola Comum e Política Comum de Pescas, reforçadas e que mantenham as especificidades das Regiões Ultraperiféricas”."
+                    "data": "04/09/2026",
+                    "assunto": "Intervenção do Deputado José Pacheco do CH - Sessão Solene Evocativa dos 50 Anos da Autonomia."
+                },
+                {
+                    "data": "25/05/2026",
+                    "assunto": "Intervenção do Deputado José Pacheco do CH - Sessão Solene do Dia da Região Autónoma dos Açores 2025."
+                },
+                {
+                    "data": "20/05/2026",
+                    "assunto": "Intervenção do Deputado José Pacheco do CHEGA - Apresentação do Debate de Urgência sobre “A Saúde nos Açores e o Hospital do Divino Espírito Santo - Que Presente e que Futuro?”"
+                },
+                {
+                    "data": "16/04/2026",
+                    "assunto": "Intervenção do Deputado José Pacheco do CH - Apresentação do Projeto de Resolução n.º 81/XIII – “Renegociação do Acordo de Cooperação e Defesa celebrado entre a República Portuguesa e os Estados Unidos da América com vista à defesa dos interesses da Região Autónoma dos Açores”."
+                },
+                {
+                    "data": "18/03/2026",
+                    "assunto": "Intervenção do Deputado José Pacheco do CH - Apresentação do Debate de Urgência sobre “Avaliação Estratégica da Base das Lajes e das suas contrapartidas para a Região”."
+                },
+                {
+                    "data": "24/02/2026",
+                    "assunto": "Intervenção do Deputado José Pacheco do CH - Apresentação do Debate de Urgência sobre “Prevenção, Plano de Catástrofes e Capacidade de Resposta da Região”."
+                },
+                {
+                    "data": "15/01/2026",
+                    "assunto": "Intervenção do Deputado José Pacheco do CH - Declaração Política."
+                },
+                {
+                    "data": "13/01/2026",
+                    "assunto": "Intervenção do Deputado José Pacheco do CH - Apresentação do Projeto de Resolução n.º 62/XIII – “Pedido de declaração de inconstitucionalidade das alterações ao subsídio social de mobilidade”."
+                },
+                {
+                    "data": "26/11/2025",
+                    "assunto": "Intervenção final do Deputado José Pacheco do CH - Plano Anual Regional para o ano de 2026 e Orçamento da Região Autónoma dos Açores para o ano de 2026."
+                },
+                {
+                    "data": "11/09/2025",
+                    "assunto": "Intervenção do Deputado José Pacheco do CH - Apresentação do Projeto de Resolução n.º 49/XIII – “Recomenda ao Governo Regional dos Açores que preserve a utilização pública do Complexo Desportivo do Lajedo”."
+                },
+                {
+                    "data": "04/06/2025",
+                    "assunto": "Intervenção do Deputado José Pacheco do CH - Apresentação do Debate de Urgência sobre “O combate às dependências químicas e tecnológicas – o que temos feito ou podemos fazer?” ."
+                },
+                {
+                    "data": "12/02/2025",
+                    "assunto": "Intervenção do Deputado José Pacheco do CH - Apresentação do Debate de Urgência sobre \"o Hospital do Divino Espírito Santo, de Ponta Delgada\"."
+                },
+                {
+                    "data": "14/01/2025",
+                    "assunto": "Intervenção do Deputado José Pacheco do CH - Declaração Política: \"A segurança ou a sua falta nos Açores\"."
+                },
+                {
+                    "data": "27/11/2024",
+                    "assunto": "Intervenção final do Deputado José Pacheco do CH - Propostas de Decreto Legislativo Regional - \"Plano Anual Regional para 2025\" e \"Orçamento da Região Autónoma dos Açores para 2025\"."
+                },
+                {
+                    "data": "17/10/2024",
+                    "assunto": "Intervenção do Deputado José Pacheco do CH - Apresentação do Projeto de Resolução n.º 15/XIII – “Recomenda ao Governo Regional dos Açores a adoção de medidas eficazes no combate à fraude no âmbito da atribuição do rendimento social de inserção, do subsídio de desemprego e do subsídio de doença”."
+                },
+                {
+                    "data": "23/05/2024",
+                    "assunto": "Intervenção final do Deputado José Pacheco do CH - Propostas de Decreto Legislativo Regional - \"Orientações de médio prazo 2024/2028\", \"Plano Anual Regional para 2024\" e \"Orçamento da Região Autónoma dos Açores para 2024\"."
+                },
+                {
+                    "data": "20/05/2024",
+                    "assunto": "Intervenção do Deputado José Pacheco do CH - Sessão Solene do Dia da Região Autónoma dos Açores 2024."
+                },
+                {
+                    "data": "15/03/2024",
+                    "assunto": "Intervenção final do Deputado José Pacheco do CH - Programa do XIV Governo da Região Autónoma dos Açores."
                 },
                 {
                     "data": "16/11/2026",
@@ -27308,6 +27194,7 @@
             "periodos": [
                 "Desde 22/02/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [],
             "comissoes_atuais": [
                 "Assuntos Parlamentares, Ambiente e Desenvolvimento Sustentável - desde 22/02/2024"
@@ -28935,8 +28822,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Secretário da Mesa da Assembleia Legislativa da Região Autónoma dos Açores"
             ],
             "comissoes_anteriores": [],
@@ -29412,7 +29300,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Vice-Presidente da Mesa da Assembleia Geral da Associação de Bombeiros Voluntários da Ilha do Corvo, desde 28/11/2022;",
+            "cargos_sociais": "Vice-Presidente da Mesa da Assembleia Geral da Associação de Bombeiros Voluntários da Ilha do Corvo, desde 28/11/2022; ; Presidente da Mesa da Assembleia Geral do Clube Desportivo Escolar da Ilha Do Corvo, desde 19/06/2022; ; Secretário Coordenador do PS da Ilha do Corvo, desde 28/09/2023",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -30028,8 +29916,9 @@
             "periodos": [
                 "Desde 13/07/2026",
                 "05/03/2026 a 02/07/2026",
-                "22/02/2024 a 22/02/2026",
-                "CARGOS QUE DESEMPENHA:",
+                "22/02/2024 a 22/02/2026"
+            ],
+            "cargos_desempenha": [
                 "Vice-Presidente do Grupo Parlamentar do PS"
             ],
             "comissoes_anteriores": [
@@ -31601,9 +31490,14 @@
             "periodos": [
                 "Desde 22/02/2024"
             ],
+            "cargos_desempenha": [
+                "Presidente da Assembleia Legislativa da Região Autónoma dos Açores",
+                "Presidente da Mesa da Assembleia Legislativa da Região Autónoma dos Açores",
+                "Presidente da Comissão Permanente"
+            ],
             "comissoes_anteriores": [],
             "comissoes_atuais": [
-                "Assuntos Parlamentares, Ambiente e Desenvolvimento Sustentável - desde 22/02/2024"
+                "Permanente - desde 22/02/2024"
             ],
             "intervencoes": [
                 {
@@ -31965,30 +31859,6 @@
                 {
                     "data": "29/02/2024",
                     "assunto": "Intervenção do Presidente da ALRAA, Luís Garcia, na sessão de lançamento do livro \"Conversas da Diáspora - 50 açorianos pelo mundo\""
-                },
-                {
-                    "data": "18/03/2026",
-                    "assunto": "Intervenção do Deputado José Sousa do CH - Apresentação do Projeto de Resolução n.º 54/XIII – “Recomenda ao Governo Regional dos Açores a implementação urgente de medidas de combate à vespa-das-galhas-do-castanheiro”."
-                },
-                {
-                    "data": "12/09/2025",
-                    "assunto": "Intervenção do Deputado José Sousa do CH - Apresentação do Projeto de Resolução n.º 50/XIII – “Recomenda ao Governo Regional dos Açores a implementação de medidas para a gestão eficiente da quota do goraz”."
-                },
-                {
-                    "data": "04/06/2025",
-                    "assunto": "Intervenção do Deputado José Sousa do CH - Apresentação do Projeto de Resolução n.º 36/XIII – “Recomenda ao Governo Regional dos Açores que determine a cessação da repartição da pesca da espécie de goraz pelo conjunto de embarcações de cada uma das nove ilhas”."
-                },
-                {
-                    "data": "10/12/2024",
-                    "assunto": "Intervenção do Deputado José Sousa do CH - Apresentação do Projeto de Decreto Legislativo Regional n.º 21/XIII – “Revogação do Decreto Legislativo Regional n.º 28/2020/A, de 19 de outubro e do Decreto Regulamentar Regional n.º 5/2021/A, de 26 de abril de 2021, alterado pelo Decreto Legislativo Regional n.º 4/2022/A, de 17 de fevereiro”."
-                },
-                {
-                    "data": "11/09/2024",
-                    "assunto": "Intervenção do Deputado José Sousa do CH - Declaração Política: Transporte marítimo nos Açores."
-                },
-                {
-                    "data": "11/06/2024",
-                    "assunto": "Intervenção do Deputado José Sousa do CH - Apresentação do Projeto de Resolução n.º 4/XIII – “Recomenda ao Governo Regional dos Açores a preservação das hortênsias dos Açores”."
                 }
             ],
             "requerimentos": []
@@ -32620,8 +32490,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Vice-Presidente do Grupo Parlamentar do PSD"
             ],
             "comissoes_anteriores": [],
@@ -32658,7 +32529,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Presidente da Juventude Social Democrática Açores, desde 26/06/2021;",
+            "cargos_sociais": "Presidente da Juventude Social Democrática Açores, desde 26/06/2021; ; Tesoureiro da Junta de Freguesia da Ribeira Seca, desde 30/10/2025; ; Representante do Conselho de Juventude dos Açores no Conselho Económico e Social dos Açores, desde 04/02/2024.",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -33274,8 +33145,9 @@
             "periodos": [
                 "Desde 22/06/2026",
                 "26/01/2026 a 11/06/2026",
-                "04/11/2025 a 05/11/2025",
-                "CARGOS QUE DESEMPENHA:",
+                "04/11/2025 a 05/11/2025"
+            ],
+            "cargos_desempenha": [
                 "Lider do Grupo Parlamentar do CDS-PP"
             ],
             "comissoes_anteriores": [
@@ -33290,12 +33162,28 @@
             ],
             "intervencoes": [
                 {
-                    "data": "17/09/2026",
-                    "assunto": "Intervenção do Deputado Luís Silveira do CDS-PP - Apresentação do Projeto de Resolução n.º 80/XIII – “Recomenda ao Governo Regional dos Açores a urgente atribuição de direitos individuais de prémio à vaca aleitante às explorações da ilha de São Jorge, com especial consideração de critérios socioeconómicos e territoriais” (CDS-PP/PSD/PPM)."
+                    "data": "18/03/2026",
+                    "assunto": "Intervenção do Deputado José Sousa do CH - Apresentação do Projeto de Resolução n.º 54/XIII – “Recomenda ao Governo Regional dos Açores a implementação urgente de medidas de combate à vespa-das-galhas-do-castanheiro”."
                 },
                 {
-                    "data": "08/07/2026",
-                    "assunto": "Intervenção do Deputado Luís Silveira do CDS-PP - Apresentação do Projeto de Resolução n.º 48/XIII – “Aproveitamento e Gestão dos Recursos Hídricos em Altitude na ilha de São Jorge”."
+                    "data": "12/09/2025",
+                    "assunto": "Intervenção do Deputado José Sousa do CH - Apresentação do Projeto de Resolução n.º 50/XIII – “Recomenda ao Governo Regional dos Açores a implementação de medidas para a gestão eficiente da quota do goraz”."
+                },
+                {
+                    "data": "04/06/2025",
+                    "assunto": "Intervenção do Deputado José Sousa do CH - Apresentação do Projeto de Resolução n.º 36/XIII – “Recomenda ao Governo Regional dos Açores que determine a cessação da repartição da pesca da espécie de goraz pelo conjunto de embarcações de cada uma das nove ilhas”."
+                },
+                {
+                    "data": "10/12/2024",
+                    "assunto": "Intervenção do Deputado José Sousa do CH - Apresentação do Projeto de Decreto Legislativo Regional n.º 21/XIII – “Revogação do Decreto Legislativo Regional n.º 28/2020/A, de 19 de outubro e do Decreto Regulamentar Regional n.º 5/2021/A, de 26 de abril de 2021, alterado pelo Decreto Legislativo Regional n.º 4/2022/A, de 17 de fevereiro”."
+                },
+                {
+                    "data": "11/09/2024",
+                    "assunto": "Intervenção do Deputado José Sousa do CH - Declaração Política: Transporte marítimo nos Açores."
+                },
+                {
+                    "data": "11/06/2024",
+                    "assunto": "Intervenção do Deputado José Sousa do CH - Apresentação do Projeto de Resolução n.º 4/XIII – “Recomenda ao Governo Regional dos Açores a preservação das hortênsias dos Açores”."
                 },
                 {
                     "data": "21/09/2026",
@@ -33357,7 +33245,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Presidente da Assembleia Geral da Casa Repouso João Inácio de Sousa, desde 14/04/2014;",
+            "cargos_sociais": "Presidente da Assembleia Geral da Casa Repouso João Inácio de Sousa, desde 14/04/2014; ; Presidente do Conselho Fiscal do Instituto de Santa Catarina, desde 03/01/2019; ; Membro da Comissão Política Nacional do CDS/PP e Presidente da Mesa da Assembleia de Ilha do CDS-PP",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -33549,6 +33437,7 @@
             "periodos": [
                 "Desde 22/02/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Assuntos Parlamentares, Ambiente e Desenvolvimento Sustentável - de 22/02/2024 a 16/11/2025"
             ],
@@ -34198,6 +34087,7 @@
                 "Desde 01/11/2025",
                 "22/02/2024 a 30/04/2025"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Economia - de 22/02/2024 a 30/04/2025",
                 "Assuntos Parlamentares, Ambiente e Desenvolvimento Sustentável - de 10/12/2025 a 22/04/2026"
@@ -34566,15 +34456,15 @@
             "requerimentos": []
         },
         "biografia": {
-            "nome_completo": "Luis Miguel Vieira Leal",
-            "nascimento": "19/07/1986",
-            "estado_civil": "Solteiro",
-            "habilitacoes": "Licenciatura",
-            "data_conclusao": "10/02/2011",
-            "profissao": "Advogado",
-            "exclusividade": "Não",
+            "nome_completo": "Maria Eugénia Pimentel Leal",
+            "nascimento": "19/06/1965",
+            "estado_civil": "Casada",
+            "habilitacoes": "Pós-Graduação",
+            "data_conclusao": "19/06/1985",
+            "profissao": "",
+            "exclusividade": "Sim",
             "cargos": "",
-            "email": "lvleal@alra.pt"
+            "email": "meleal@alra.pt"
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
@@ -35120,8 +35010,9 @@
             "periodos": [
                 "Desde 03/11/2025",
                 "08/09/2025 a 17/09/2025",
-                "08/04/2025 a 18/04/2025",
-                "CARGOS QUE DESEMPENHA:",
+                "08/04/2025 a 18/04/2025"
+            ],
+            "cargos_desempenha": [
                 "Secretária da Comissão Assuntos Sociais"
             ],
             "comissoes_anteriores": [
@@ -35150,7 +35041,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Vogal da Comissão Política Concelhia de Ponta Delgada do PSD - Açores;",
+            "cargos_sociais": "Vogal da Comissão Política Concelhia de Ponta Delgada do PSD - Açores; ; Conselheira Regional do PSD - Açores (vogal)",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -35448,8 +35339,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 01/05/2025",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 01/05/2025"
+            ],
+            "cargos_desempenha": [
                 "Relator da Comissão Assuntos Sociais"
             ],
             "comissoes_anteriores": [
@@ -35859,7 +35751,7 @@
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
-            "outras": "Vereador em regime de não permanência na Câmara Municipal da Praia da Vitória, desde 30/10/2025;"
+            "outras": "Vereador em regime de não permanência na Câmara Municipal da Praia da Vitória, desde 30/10/2025; ; Secretário Coordenador da Concelhia PS - Praia da Vitória; ; Membro do Secretariado e da Comissão Regional do PS; Membro do Secretariado da Ilha Terceira do PS; ; Coordenador do Pólo da Ilha Terceira da APSS - Associação dos Profissionais de Serviço Social"
         },
         "vencimentos": [
             {
@@ -36196,6 +36088,7 @@
                 "Desde 03/11/2025",
                 "22/02/2024 a 22/03/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Política Geral - de 22/02/2024 a 22/03/2024",
                 "Assuntos Sociais - de 03/11/2025 a 16/11/2025"
@@ -36219,7 +36112,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Presidente da Assembleia Geral da Casa do Povo de Vila Franca do Campo, desde 08/01/2024;",
+            "cargos_sociais": "Presidente da Assembleia Geral da Casa do Povo de Vila Franca do Campo, desde 08/01/2024; ; Presidente da Assembleia Geral do Centro de Assistência Social de Vila Franca do Campo, desde 03/03/2022; ; Membro do Conselho Fiscal da União das Misericórdias Portuguesas, desde 20/12/2023; ; Presidente da Comissão Política Concelhia do PSD de Vila Franca do Campo, desde 20/12/2024.",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -36499,6 +36392,7 @@
             "periodos": [
                 "Desde 22/02/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [],
             "comissoes_atuais": [
                 "Política Geral - desde 22/02/2024",
@@ -37613,6 +37507,7 @@
                 "CARGOS QUE DESEMPENHOU:",
                 "Secretária da Comissão Economia"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Economia - de 22/02/2024 a 18/05/2026",
                 "Parlamentar de Inquérito ao Incêndio no Hospital Divino Espírito Santo - de 03/02/2025 a 10/07/2025"
@@ -37621,30 +37516,6 @@
                 "Economia - desde 29/05/2026"
             ],
             "intervencoes": [
-                {
-                    "data": "22/10/2026",
-                    "assunto": "Intervenção da Deputada Marlene Damião do PS - Apresentação do Debate de Urgência sobre “Políticas Públicas de Incentivo ao Turismo”."
-                },
-                {
-                    "data": "16/04/2026",
-                    "assunto": "Intervenção da Deputada Marlene Damião do PS - Apresentação do Debate de Urgência sobre “Políticas Públicas de incentivo ao Turismo”."
-                },
-                {
-                    "data": "14/04/2026",
-                    "assunto": "Intervenção da Deputada Marlene Damião do PS - Apresentação do Projeto de Resolução n.º 58/XIII – “Medidas para reforçar a prevenção da Doença de Alzheimer”."
-                },
-                {
-                    "data": "16/01/2026",
-                    "assunto": "Intervenção da Deputada Marlene Damião do PS - Apresentação do Projeto de Resolução n.º 32/XIII – “Medidas de apoio à integração, formação e legalização dos Imigrantes nos Açores”."
-                },
-                {
-                    "data": "15/10/2025",
-                    "assunto": "Intervenção da Deputada Marlene Damião do PS - Declaração Política."
-                },
-                {
-                    "data": "15/01/2025",
-                    "assunto": "Intervenção da Deputada Marlene Damião do PS - Apresentação do Projeto de Resolução n.º 14/XIII – “Medidas de incentivo à formação e à descarbonização no setor do táxi”."
-                },
                 {
                     "data": "18/11/2026",
                     "assunto": "Estudo sobre os custos associados ao Passe Sub-23 nos transportes públicos rodoviários nos Açores"
@@ -38855,8 +38726,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Vice-Presidente do Grupo Parlamentar do PS"
             ],
             "comissoes_anteriores": [],
@@ -40920,8 +40792,9 @@
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
                 "Desde 05/12/2024",
-                "22/02/2024 a 24/11/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "22/02/2024 a 24/11/2024"
+            ],
+            "cargos_desempenha": [
                 "Secretária da Mesa da Assembleia Legislativa da Região Autónoma dos Açores"
             ],
             "comissoes_anteriores": [],
@@ -40961,7 +40834,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Presidente da Sociedade Filarmónica de Instrução Recreio dos Artistas (atividade não remunerada), desde 20/01/2018;",
+            "cargos_sociais": "Presidente da Sociedade Filarmónica de Instrução Recreio dos Artistas (atividade não remunerada), desde 20/01/2018; ; Presidente da Assembleia Concelhia de Angra do Heroísmo (PSD), desde 24/12/2024; ; Vice-presidente da Irmandade de Nossa Senhora do Livramento, desde 09/05/2025; ; Deputada Municipal da Câmara Municipal de Angra do Heroísmo, desde 24/10/2025.",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -41561,8 +41434,9 @@
             "periodos": [
                 "Desde 01/06/2026",
                 "02/03/2026 a 10/04/2026",
-                "22/02/2024 a 07/02/2026",
-                "CARGOS QUE DESEMPENHA:",
+                "22/02/2024 a 07/02/2026"
+            ],
+            "cargos_desempenha": [
                 "Lider da Representação Parlamentar do IL"
             ],
             "comissoes_anteriores": [
@@ -42379,6 +42253,7 @@
             "periodos": [
                 "Desde 22/02/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Parlamentar de Inquérito ao Incêndio no Hospital Divino Espírito Santo - de 03/02/2025 a 10/07/2025"
             ],
@@ -43417,15 +43292,15 @@
             "requerimentos": []
         },
         "biografia": {
-            "nome_completo": "Olivéria de Lurdes Cabral dos Santos",
-            "nascimento": "07/05/1976",
-            "estado_civil": "Solteira",
-            "habilitacoes": "Licenciatura",
-            "data_conclusao": "13/05/2000",
-            "profissao": "Jornalista",
-            "exclusividade": "Sim",
+            "nome_completo": "Patrícia Maria Melo Miranda",
+            "nascimento": "19/01/1990",
+            "estado_civil": "Casada",
+            "habilitacoes": "Mestrado",
+            "data_conclusao": "18/11/2014",
+            "profissao": "Médica Veterinária e Produtora Agrícola",
+            "exclusividade": "Não",
             "cargos": "",
-            "email": "osantos@alra.pt"
+            "email": "pmiranda@alra.pt"
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
@@ -44045,6 +43920,7 @@
             "periodos": [
                 "Desde 22/02/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Economia - de 22/02/2024 a 22/04/2026"
             ],
@@ -44608,19 +44484,19 @@
             "requerimentos": []
         },
         "biografia": {
-            "nome_completo": "Olivéria de Lurdes Cabral dos Santos",
-            "nascimento": "07/05/1976",
-            "estado_civil": "Solteira",
-            "habilitacoes": "Licenciatura",
-            "data_conclusao": "13/05/2000",
-            "profissao": "Jornalista",
-            "exclusividade": "Sim",
+            "nome_completo": "Patrícia Maria Melo Miranda",
+            "nascimento": "19/01/1990",
+            "estado_civil": "Casada",
+            "habilitacoes": "Mestrado",
+            "data_conclusao": "18/11/2014",
+            "profissao": "Médica Veterinária e Produtora Agrícola",
+            "exclusividade": "Não",
             "cargos": "",
-            "email": "osantos@alra.pt"
+            "email": "pmiranda@alra.pt"
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Presidente da Assembleia Geral da Associação de Desenvolvimento Intergeracional, desde 07/02/2020;",
+            "cargos_sociais": "Presidente da Assembleia Geral da Associação de Desenvolvimento Intergeracional, desde 07/02/2020; ; Vogal da Assembleia de Freguesia de Santo António, desde 29/10/2025.",
             "apoios": "",
             "servicos": "Produtora Agrícola, desde 02/01/2018",
             "sociedades": "Nada a observar",
@@ -45236,6 +45112,7 @@
             "periodos": [
                 "Desde 22/02/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Assuntos Parlamentares, Ambiente e Desenvolvimento Sustentável - de 17/11/2025 a 16/03/2026",
                 "Política Geral - de 22/02/2024 a 16/11/2025"
@@ -45268,7 +45145,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Presidente da Assembleia Geral da Associação Filarmónica Cultural Recreativa Santa Bárbara Fonte do Bastardo, desde 19/09/2022;",
+            "cargos_sociais": "Presidente da Assembleia Geral da Associação Filarmónica Cultural Recreativa Santa Bárbara Fonte do Bastardo, desde 19/09/2022; ; Deputado Municipal da Assembleia Municipal de Angra do Heroísmo, desde 24/10/2025.",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -45882,8 +45759,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Vice-Presidente do Grupo Parlamentar do PSD",
                 "Secretário da Comissão Política Geral"
             ],
@@ -46542,8 +46420,9 @@
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
                 "Desde 21/01/2025",
-                "22/02/2024 a 10/01/2025",
-                "CARGOS QUE DESEMPENHA:",
+                "22/02/2024 a 10/01/2025"
+            ],
+            "cargos_desempenha": [
                 "Secretário do Grupo Parlamentar do PSD",
                 "Relator da Comissão Economia"
             ],
@@ -46588,7 +46467,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Membro da Direção da Associação Coro e Orquestra da Ilha São Jorge José Damião de Almeida, desde 10/04/2015;",
+            "cargos_sociais": "Membro da Direção da Associação Coro e Orquestra da Ilha São Jorge José Damião de Almeida, desde 10/04/2015; ; Deputado Municipal na Assembleia Municipal de Velas, desde 16/12/2025.",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -46598,187 +46477,187 @@
             {
                 "ano": "2026",
                 "mes": "Setembro",
-                "liquido": "3 592,87 €",
+                "liquido": "3 381,14 €",
                 "obs": ""
             },
             {
                 "ano": "2026",
                 "mes": "Agosto",
-                "liquido": "3 682,18 €",
+                "liquido": "3 737,41 €",
                 "obs": ""
             },
             {
                 "ano": "2026",
                 "mes": "Julho",
-                "liquido": "3 682,18 €",
+                "liquido": "3 559,77 €",
                 "obs": ""
             },
             {
                 "ano": "2026",
                 "mes": "Junho",
-                "liquido": "6 683,13 €",
+                "liquido": "6 430,97 €",
                 "obs": "Inclui vencimento + vencimento extraordinário de junho"
             },
             {
                 "ano": "2026",
                 "mes": "Maio",
-                "liquido": "3 682,18 €",
+                "liquido": "3 470,46 €",
                 "obs": ""
             },
             {
                 "ano": "2026",
                 "mes": "Abril",
-                "liquido": "3 770,50 €",
+                "liquido": "3 737,41 €",
                 "obs": ""
             },
             {
                 "ano": "2026",
                 "mes": "Março",
-                "liquido": "3 682,18 €",
+                "liquido": "3 559,77 €",
                 "obs": ""
             },
             {
                 "ano": "2026",
                 "mes": "Fevereiro",
-                "liquido": "3 845,60 €",
+                "liquido": "3 630,67 €",
                 "obs": ""
             },
             {
                 "ano": "2026",
                 "mes": "Janeiro",
-                "liquido": "3 692,41 €",
+                "liquido": "3 575,18 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Dezembro",
-                "liquido": "3 692,41 €",
+                "liquido": "3 575,18 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Novembro",
-                "liquido": "6 540,75 €",
+                "liquido": "6 384,09 €",
                 "obs": "Inclui vencimento + vencimento extraordinário de novembro"
             },
             {
                 "ano": "2025",
                 "mes": "Outubro",
-                "liquido": "3 692,41 €",
+                "liquido": "3 486,86 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Setembro",
-                "liquido": "5 175,77 €",
+                "liquido": "4 899,23 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Agosto",
-                "liquido": "3 666,41 €",
+                "liquido": "3 549,18 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Julho",
-                "liquido": "3 666,41 €",
+                "liquido": "3 461,86 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Junho",
-                "liquido": "6 404,43 €",
+                "liquido": "6 159,46 €",
                 "obs": "Inclui vencimento + vencimento extraordinário de junho"
             },
             {
                 "ano": "2025",
                 "mes": "Maio",
-                "liquido": "3 578,09 €",
+                "liquido": "3 461,86 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Abril",
-                "liquido": "3 754,72 €",
+                "liquido": "3 549,18 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Março",
-                "liquido": "3 666,41 €",
+                "liquido": "3 461,86 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Fevereiro",
-                "liquido": "3 746,43 €",
+                "liquido": "3 535,69 €",
                 "obs": ""
             },
             {
                 "ano": "2025",
                 "mes": "Janeiro",
-                "liquido": "3 500,91 €",
+                "liquido": "3 488,88 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Dezembro",
-                "liquido": "3 431,72 €",
+                "liquido": "3 325,25 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Novembro",
-                "liquido": "5 702,92 €",
+                "liquido": "6 018,71 €",
                 "obs": "Inclui vencimento + vencimento extraordinário de novembro"
             },
             {
                 "ano": "2024",
                 "mes": "Outubro",
-                "liquido": "3 891,88 €",
+                "liquido": "3 700,25 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Setembro",
-                "liquido": "3 638,40 €",
+                "liquido": "3 446,78 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Agosto",
-                "liquido": "3 412,72 €",
+                "liquido": "3 306,25 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Julho",
-                "liquido": "3 495,88 €",
+                "liquido": "3 389,41 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Junho",
-                "liquido": "5 754,06 €",
+                "liquido": "5 984,71 €",
                 "obs": "Inclui vencimento + vencimento extraordinário de junho"
             },
             {
                 "ano": "2024",
                 "mes": "Maio",
-                "liquido": "3 412,72 €",
+                "liquido": "3 306,25 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Abril",
-                "liquido": "3 596,90 €",
+                "liquido": "3 314,19 €",
                 "obs": ""
             },
             {
                 "ano": "2024",
                 "mes": "Março",
-                "liquido": "4 065,16 €",
+                "liquido": "2 986,78 €",
                 "obs": ""
             }
         ],
@@ -47186,8 +47065,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Secretário do Grupo Parlamentar do PSD",
                 "Presidente da Comissão Economia"
             ],
@@ -47841,8 +47721,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Lider da Representação Parlamentar do PAN"
             ],
             "comissoes_anteriores": [
@@ -48842,6 +48723,7 @@
             "periodos": [
                 "Desde 22/02/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Assuntos Parlamentares, Ambiente e Desenvolvimento Sustentável - de 22/02/2024 a 09/12/2025",
                 "Política Geral - de 22/02/2024 a 14/01/2026",
@@ -48982,7 +48864,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Vogal da Direção da Associação Portuguesa de Harmonização e Terapêutica Orofacial, desde 04/05/2025 (atividade não remunerada);",
+            "cargos_sociais": "Vogal da Direção da Associação Portuguesa de Harmonização e Terapêutica Orofacial, desde 04/05/2025 (atividade não remunerada); ; Membro da Assembleia Municipal da Praia da Vitória.",
             "apoios": "",
             "servicos": "Médico-Dentista (atividade não remunerada).",
             "sociedades": "Sócio-Gerente da Clínica Central da Praia, Lda., desde 11/07/2002 (atividade não remunerada).",
@@ -49599,6 +49481,7 @@
                 "Desde 24/05/2026",
                 "03/12/2025 a 14/02/2026"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [],
             "comissoes_atuais": [],
             "intervencoes": [],
@@ -49766,6 +49649,7 @@
                 "Desde 11/03/2024",
                 "22/02/2024 a 02/03/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [],
             "comissoes_atuais": [
                 "Economia - desde 22/02/2024"
@@ -50405,8 +50289,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Vice-Presidente do Grupo Parlamentar do PS"
             ],
             "comissoes_anteriores": [
@@ -51020,7 +50905,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Presidente da Juventude Socialista Açores, desde 06/09/2024;",
+            "cargos_sociais": "Presidente da Juventude Socialista Açores, desde 06/09/2024; ; Membro da Assembleia de Freguesia de São Pedro - Ponta Delgada, desde 30/10/2025.",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -51634,8 +51519,9 @@
         "historico": {
             "legislatura": "XIII LEGISLATURA",
             "periodos": [
-                "Desde 22/02/2024",
-                "CARGOS QUE DESEMPENHA:",
+                "Desde 22/02/2024"
+            ],
+            "cargos_desempenha": [
                 "Vice-Presidente do Grupo Parlamentar do PSD"
             ],
             "comissoes_anteriores": [
@@ -51679,7 +51565,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Vogal da Direção da Associação Humanitária Bombeiros Voluntários de Vila Franca do Campo, desde 01/02/2022;",
+            "cargos_sociais": "Vogal da Direção da Associação Humanitária Bombeiros Voluntários de Vila Franca do Campo, desde 01/02/2022; ; Vice-Presidente dos Trabalhadores Social Democratas dos Açores, desde 19/10/2025.",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -52295,6 +52181,7 @@
             "periodos": [
                 "Desde 22/02/2024"
             ],
+            "cargos_desempenha": [],
             "comissoes_anteriores": [
                 "Assuntos Sociais - de 22/02/2024 a 09/12/2025"
             ],
@@ -52914,7 +52801,7 @@
         },
         "interesses": {
             "cargos_exercidos": "Nada a observar",
-            "cargos_sociais": "Funções docentes no Ensino Superior na Universidade dos Açores, Faculdade de Economia e Gestão, desde 01/09/2012;",
+            "cargos_sociais": "Funções docentes no Ensino Superior na Universidade dos Açores, Faculdade de Economia e Gestão, desde 01/09/2012; ; Membro da Assembleia de Freguesia, na Junta de Freguesia de Arrifes, desde 03/11/2025.",
             "apoios": "",
             "servicos": "Nada a observar",
             "sociedades": "Nada a observar",
@@ -53530,12 +53417,25 @@
             "periodos": [
                 "Desde 22/02/2024"
             ],
-            "comissoes_anteriores": [],
-            "comissoes_atuais": [],
+            "cargos_desempenha": [
+                "Vice-Presidente do Grupo Parlamentar do PSD"
+            ],
+            "comissoes_anteriores": [
+                "Política Geral - de 31/07/2025 a 16/03/2026"
+            ],
+            "comissoes_atuais": [
+                "Permanente - desde 17/03/2026",
+                "Assuntos Parlamentares, Ambiente e Desenvolvimento Sustentável - desde 22/02/2024",
+                "Grupo de Trabalho - Proposta de Revisão da Lei das Finanças Locais - desde 01/08/2025"
+            ],
             "intervencoes": [
                 {
-                    "data": "22/10/2026",
-                    "assunto": "Intervenção do Deputado Vasco Cordeiro do PS - Apresentação do Projeto de Resolução n.º 114/XIII – “Quadro Financeiro Plurianual da União Europeia 2028-2034: participação dos Açores na definição, gestão e execução dos fundos europeus”."
+                    "data": "24/02/2026",
+                    "assunto": "Intervenção da Deputada Sabrina Furtado do PSD - Apresentação do Projeto de Resolução n.º 63/XIII – “Pronúncia por iniciativa própria da Assembleia Legislativa da Região Autónoma dos Açores, que recomenda que o Governo da República contemple as reivindicações das autarquias locais da Região Autónoma dos Açores na revisão da Lei de Finanças Locais”."
+                },
+                {
+                    "data": "10/07/2025",
+                    "assunto": "Intervenção da Deputada Sabrina Furtado do PSD - Apresentação do Projeto de Resolução n.º 44/XIII – “Grupo de Trabalho para a elaboração de uma proposta de revisão da Lei das Finanças Locais”."
                 },
                 {
                     "data": "10/11/2026",

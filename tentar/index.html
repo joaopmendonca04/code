@@ -75,8 +75,10 @@
                 <input id="pesquisaComissao" type="text" placeholder="Pesquisar comissão ou deputado..." oninput="renderizarComissoes()" class="p-2.5 border border-gray-200 rounded-xl bg-white text-sm w-full md:w-72">
             </div>
 
-            <div id="listaComissoes" class="space-y-6"></div>
+            <!-- Grelha compacta que expande a largura total ao clicar -->
+            <div id="listaComissoes" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
         </main>
+
     </div>
 
     <script>
@@ -574,12 +576,39 @@
             }
 
             if (comissoes.length === 0) {
-                container.innerHTML = `<p class="text-center text-gray-500 py-8">Nenhuma comissão atual encontrada.</p>`;
+                container.innerHTML = `<p class="col-span-full text-center text-gray-500 py-8">Nenhuma comissão atual encontrada.</p>`;
                 return;
             }
 
             container.innerHTML = comissoes.map(com => {
+                const aberta = comissaoSelecionadaKey === com.key;
                 const todos = Array.from(com.membrosMap.values());
+
+                // Calcular resumo da comissão (partidos e círculos)
+                const porPartido = {};
+                const porCirculo = {};
+                todos.forEach(m => {
+                    const p = (m.partido || "N/D").trim();
+                    const c = (m.circulo || "N/D").trim();
+                    porPartido[p] = (porPartido[p] || 0) + 1;
+                    porCirculo[c] = (porCirculo[c] || 0) + 1;
+                });
+
+                const partidosOrd = Object.entries(porPartido).sort((a, b) => b[1] - a[1]);
+                const circulosOrd = Object.entries(porCirculo).sort((a, b) => b[1] - a[1]);
+
+                const badgesPartidos = partidosOrd.map(([sigla, qtd]) => {
+                    const cor = coresPartidos[sigla] || "bg-gray-100 text-gray-800 border border-gray-200";
+                    return `<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold ${cor}">${sigla} <span class="opacity-80">(${qtd})</span></span>`;
+                }).join("");
+
+                const badgesCirculos = circulosOrd.map(([ilha, qtd]) => `
+                    <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg text-[11px] font-medium bg-white border border-gray-200 text-gray-700">
+                        ${ilha} <strong class="text-blue-900">(${qtd})</strong>
+                    </span>
+                `).join("");
+
+                // Separar Mesa e Restantes Membros
                 const presidente = todos.find(m => m.cargo === "presidente");
                 const secretario = todos.find(m => m.cargo === "secretario");
                 const relator = todos.find(m => m.cargo === "relator");
@@ -590,48 +619,99 @@
                     .sort((a, b) => a.nome.localeCompare(b.nome, "pt"));
 
                 return `
-                    <section class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8 space-y-6">
-                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-gray-100 pb-4">
-                            <div>
-                                <span class="inline-block px-2.5 py-0.5 text-[11px] font-bold uppercase rounded-md bg-emerald-100 text-emerald-800 border border-emerald-200 mb-1.5">
-                                    Em Funcionamento
-                                </span>
-                                <h3 class="text-xl font-bold text-gray-900">${com.nome}</h3>
-                            </div>
-                            <span class="text-xs font-bold text-blue-900 bg-blue-50 px-3 py-1.5 rounded-lg self-start sm:self-auto">
-                                ${todos.length} Membros Atuais
-                            </span>
-                        </div>
-
-                        <!-- Mesa da Comissão: Presidente, Secretário e Relator -->
-                        <div>
-                            <h4 class="text-xs font-bold uppercase tracking-wider text-blue-900 mb-3">Mesa da Comissão</h4>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                ${presidente
-                                    ? renderizarCartaoMembroComissao(presidente, "Presidente")
-                                    : `<div class="p-4 rounded-xl border border-dashed border-gray-200 bg-gray-50/50 flex items-center justify-center text-xs text-gray-400">Presidente não identificado</div>`}
-                                ${secretario
-                                    ? renderizarCartaoMembroComissao(secretario, "Secretário(a)")
-                                    : `<div class="p-4 rounded-xl border border-dashed border-gray-200 bg-gray-50/50 flex items-center justify-center text-xs text-gray-400">Secretário(a) não identificado(a)</div>`}
-                                ${relator
-                                    ? renderizarCartaoMembroComissao(relator, "Relator(a)")
-                                    : `<div class="p-4 rounded-xl border border-dashed border-gray-200 bg-gray-50/50 flex items-center justify-center text-xs text-gray-400">Relator(a) não identificado(a)</div>`}
-                            </div>
-                        </div>
-
-                        <!-- Restantes Membros Atuais -->
-                        ${restantes.length > 0 ? `
-                            <div>
-                                <h4 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Restantes Membros (${restantes.length})</h4>
-                                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                                    ${restantes.map(m => renderizarCartaoMembroComissao(m)).join("")}
+                    <section class="bg-white rounded-2xl shadow-sm border ${aberta ? 'col-span-full border-blue-500 ring-2 ring-blue-400/40 shadow-md' : 'border-gray-100 hover:shadow-md hover:-translate-y-0.5'} transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                        <!-- Cabeçalho Compacto Clicável -->
+                        <div onclick="alternarComissao('${encodeURIComponent(com.key)}')" class="p-5 ${aberta ? 'md:px-8 md:pt-7 md:pb-5 bg-gradient-to-r from-gray-50/80 to-white border-b border-gray-100' : 'h-full flex flex-col justify-between'} cursor-pointer">
+                            <div class="flex items-start justify-between gap-3">
+                                <div>
+                                    <span class="inline-block px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider rounded-md bg-emerald-100 text-emerald-800 border border-emerald-200 mb-2">
+                                        Em Funcionamento
+                                    </span>
+                                    <h3 class="${aberta ? 'text-xl md:text-2xl' : 'text-base'} font-bold text-gray-900 leading-snug">
+                                        ${com.nome}
+                                    </h3>
                                 </div>
+                                ${aberta
+                                    ? `<span class="text-gray-400 hover:text-gray-700 text-2xl font-bold leading-none px-1">&times;</span>`
+                                    : ''
+                                }
+                            </div>
+
+                            <!-- Mini-resumo de partidos visível mesmo no cartão compacto -->
+                            ${!aberta ? `
+                                <div class="flex flex-wrap gap-1.5 mt-3">
+                                    ${partidosOrd.map(([sigla, qtd]) => {
+                                        const cor = coresPartidos[sigla] || "bg-gray-100 text-gray-800 border border-gray-200";
+                                        return `<span class="px-2 py-0.5 rounded text-[10px] font-bold ${cor}">${sigla} ${qtd}</span>`;
+                                    }).join("")}
+                                </div>
+                            ` : ''}
+
+                            <div class="flex items-center justify-between mt-4 pt-3 ${aberta ? '' : 'border-t border-gray-100'}">
+                                <span class="text-xs font-semibold text-gray-500">
+                                    ${todos.length} deputado(s)
+                                </span>
+                                <span class="text-xs font-bold text-blue-900">
+                                    ${aberta ? 'Recolher ▲' : 'Ver membros ▼'}
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo Expandido -->
+                        ${aberta ? `
+                            <div class="p-6 md:p-8 space-y-6">
+                                <!-- Resumo da Composição da Comissão -->
+                                <div class="bg-gray-50 rounded-xl border border-gray-100 p-4 md:p-5 grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+                                    <div class="lg:col-span-2 flex items-center gap-3 lg:border-r lg:border-gray-200 lg:pr-4">
+                                        <div class="bg-blue-100 text-blue-950 rounded-xl px-3.5 py-2 text-center w-full lg:w-auto">
+                                            <span class="block text-[10px] font-bold uppercase tracking-wider text-blue-800">Membros</span>
+                                            <span class="text-xl font-extrabold">${todos.length}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="lg:col-span-5 space-y-1.5">
+                                        <span class="block text-[10px] font-bold uppercase tracking-wider text-gray-400">Distribuição Partidária</span>
+                                        <div class="flex flex-wrap gap-1.5">${badgesPartidos}</div>
+                                    </div>
+
+                                    <div class="lg:col-span-5 space-y-1.5">
+                                        <span class="block text-[10px] font-bold uppercase tracking-wider text-gray-400">Representação por Círculo / Ilha</span>
+                                        <div class="flex flex-wrap gap-1.5">${badgesCirculos}</div>
+                                    </div>
+                                </div>
+
+                                <!-- Mesa da Comissão -->
+                                <div>
+                                    <h4 class="text-xs font-bold uppercase tracking-wider text-blue-900 mb-3">Mesa da Comissão</h4>
+                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                        ${presidente
+                                            ? renderizarCartaoMembroComissao(presidente, "Presidente")
+                                            : `<div class="p-4 rounded-xl border border-dashed border-gray-200 bg-gray-50/50 flex items-center justify-center text-xs text-gray-400">Presidente não identificado</div>`}
+                                        ${secretario
+                                            ? renderizarCartaoMembroComissao(secretario, "Secretário(a)")
+                                            : `<div class="p-4 rounded-xl border border-dashed border-gray-200 bg-gray-50/50 flex items-center justify-center text-xs text-gray-400">Secretário(a) não identificado(a)</div>`}
+                                        ${relator
+                                            ? renderizarCartaoMembroComissao(relator, "Relator(a)")
+                                            : `<div class="p-4 rounded-xl border border-dashed border-gray-200 bg-gray-50/50 flex items-center justify-center text-xs text-gray-400">Relator(a) não identificado(a)</div>`}
+                                    </div>
+                                </div>
+
+                                <!-- Restantes Membros Atuais -->
+                                ${restantes.length > 0 ? `
+                                    <div>
+                                        <h4 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Restantes Membros (${restantes.length})</h4>
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                                            ${restantes.map(m => renderizarCartaoMembroComissao(m)).join("")}
+                                        </div>
+                                    </div>
+                                ` : ''}
                             </div>
                         ` : ''}
                     </section>
                 `;
             }).join("");
         }
+
 
 
         function alternarComissao(encodedKey) {

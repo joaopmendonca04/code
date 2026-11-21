@@ -56,11 +56,11 @@
     </div>
 
     <script>
-        // Variáveis globais
         let deputados = [];
-        let deputadoSelecionadoIndex = null; // Guarda qual está atualmente expandido
+        let listaAtual = [];
+        let deputadoSelecionadoId = null;
+        let abaAtiva = "historico";
 
-        // Mapeamento oficial das cores dos partidos representados na ALRAA
         const coresPartidos = {
             "PSD": "bg-orange-100 text-orange-800 border border-orange-200",
             "PS": "bg-rose-100 text-rose-800 border border-rose-200",
@@ -72,66 +72,18 @@
             "PPM": "bg-blue-50 text-blue-700 border border-blue-200"
         };
 
-        // Função para ir buscar o ficheiro JSON gerado pelo Python
         async function carregarDeputados() {
             try {
                 const response = await fetch('deputados.json');
                 deputados = await response.json();
+                listaAtual = deputados;
                 renderizarResumo(deputados);
-                renderizarDeputados(deputados);
+                renderizarDeputados(listaAtual);
             } catch (error) {
                 console.error("Erro ao carregar o ficheiro JSON:", error);
-                document.getElementById("grelhaDeputados").innerHTML = 
-                    `<p class="col-span-full text-center text-red-500 py-8">Erro ao carregar os dados dos deputados. Certifica-te de que o script Python foi executado e que estás a usar um servidor local (Live Server).</p>`;
+                document.getElementById("grelhaDeputados").innerHTML =
+                    `<p class="col-span-full text-center text-red-500 py-8">Erro ao carregar os dados. Executa o scraper.py e abre com Live Server.</p>`;
             }
-        }
-
-        function renderizarDeputados(lista) {
-            const grelha = document.getElementById("grelhaDeputados");
-            grelha.innerHTML = "";
-
-            if (lista.length === 0) {
-                grelha.innerHTML = `<p class="col-span-full text-center text-gray-500 py-8">Nenhum deputado encontrado com estes filtros.</p>`;
-                return;
-            }
-
-            lista.forEach((dep, index) => {
-                const classeCor = coresPartidos[dep.partido] || "bg-gray-100 text-gray-800 border border-gray-200";
-                const estaSelecionado = deputadoSelecionadoIndex === index;
-
-                // O cartão principal mantém sempre a mesma estrutura base (foto vertical em cima, nome e partido alinhados)
-                // Se estiver selecionado, expande-se a ocupar a largura total e abre a gaveta de detalhes em baixo de forma limpa.
-                const card = `
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden border ${estaSelecionado ? 'col-span-full border-blue-500 ring-2 ring-blue-400' : 'border-gray-100 hover:shadow-xl hover:-translate-y-1'} transition-all duration-300">
-                        <!-- Cabeçalho do Cartão / Zona Clicável -->
-                        <div onclick="alternarExpansao(${index})" class="${estaSelecionado ? 'flex flex-col md:flex-row gap-6 p-6 md:p-8 cursor-pointer' : 'cursor-pointer'}">
-                            <img src="${dep.foto}" alt="${dep.nome}" class="${estaSelecionado ? 'w-36 h-48 md:w-44 md:h-56' : 'w-full h-72'} object-cover object-top bg-gray-200 rounded-lg flex-shrink-0 transition-all duration-300">
-                            
-                            <div class="${estaSelecionado ? 'flex-1 flex flex-col justify-between' : 'p-4'}">
-                                <div>
-                                    <div class="flex justify-between items-start">
-                                        <span class="inline-block px-2.5 py-1 text-xs font-bold rounded-md mb-2 ${classeCor}">${dep.partido}</span>
-                                        ${estaSelecionado ? '<span class="text-gray-400 hover:text-gray-700 text-2xl font-bold px-2">&times;</span>' : ''}
-                                    </div>
-                                    <h3 class="${estaSelecionado ? 'text-2xl font-bold text-gray-900 mt-1' : 'font-bold text-lg text-gray-900'}">${dep.nome}</h3>
-                                    <p class="${estaSelecionado ? 'text-sm text-gray-500 mt-2' : 'text-xs text-gray-500 mt-2'}">Círculo: <span class="font-semibold text-gray-700">${dep.circulo}</span></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Secção Expandida (Só aparece suavemente para o selecionado) -->
-                        ${estaSelecionado ? `
-                            <div class="px-6 pb-6 md:px-8 md:pb-8 pt-0 border-t border-gray-100 mt-4 animate-fadeIn">
-                                <div class="bg-gray-50 p-5 rounded-xl border border-gray-100 space-y-3 mt-4">
-                                    <h4 class="text-xs font-bold uppercase tracking-wider text-blue-900">Informações e Atividade Parlamentar</h4>
-                                    <p class="text-sm text-gray-600 italic">Podes adicionar aqui dados detalhados como biografia, comissões parlamentares ou contactos.</p>
-                                </div>
-                            </div>
-                        ` : ''}
-                    </div>
-                `;
-                grelha.innerHTML += card;
-            });
         }
 
         function renderizarResumo(lista) {
@@ -139,17 +91,13 @@
             if (!container) return;
 
             const total = lista.length;
-
-            // Contagem por partido
             const porPartido = {};
-            // Contagem por ilha/círculo e círculo de compensação
             const porCirculo = {};
             let totalCompensacao = 0;
 
             lista.forEach(dep => {
                 const partido = (dep.partido || "N/D").trim();
                 const circulo = (dep.circulo || "N/D").trim();
-
                 porPartido[partido] = (porPartido[partido] || 0) + 1;
 
                 if (circulo.toLowerCase().includes("compensação")) {
@@ -159,26 +107,8 @@
                 }
             });
 
-            // Ordenar partidos e círculos do maior para o menor número de deputados
             const partidosOrdenados = Object.entries(porPartido).sort((a, b) => b[1] - a[1]);
             const ilhasOrdenadas = Object.entries(porCirculo).sort((a, b) => b[1] - a[1]);
-
-            const badgesPartidos = partidosOrdenados.map(([sigla, qtd]) => {
-                const cor = coresPartidos[sigla] || "bg-gray-100 text-gray-800 border border-gray-200";
-                return `
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold ${cor}">
-                        <span>${sigla}</span>
-                        <span class="opacity-80">(${qtd})</span>
-                    </span>
-                `;
-            }).join("");
-
-            const itensIlhas = ilhasOrdenadas.map(([ilha, qtd]) => `
-                <div class="flex items-center justify-between bg-gray-50 border border-gray-100 rounded-lg px-3 py-2 text-sm">
-                    <span class="text-gray-700 font-medium">${ilha}</span>
-                    <span class="font-bold text-blue-900">${qtd}</span>
-                </div>
-            `).join("");
 
             container.innerHTML = `
                 <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 pb-5 border-b border-gray-100">
@@ -197,56 +127,280 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 pt-5">
-                    <!-- Partidos -->
                     <div class="lg:col-span-5 space-y-2.5">
                         <h3 class="text-xs font-bold uppercase tracking-wider text-gray-500">Por Partido</h3>
                         <div class="flex flex-wrap gap-2">
-                            ${badgesPartidos}
+                            ${partidosOrdenados.map(([sigla, qtd]) => {
+                                const cor = coresPartidos[sigla] || "bg-gray-100 text-gray-800 border border-gray-200";
+                                return `<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold ${cor}">${sigla} <span class="opacity-80">(${qtd})</span></span>`;
+                            }).join("")}
                         </div>
                     </div>
-
-                    <!-- Ilhas / Círculos -->
                     <div class="lg:col-span-7 space-y-2.5">
                         <h3 class="text-xs font-bold uppercase tracking-wider text-gray-500">Por Ilha / Círculo Eleitoral</h3>
                         <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
-                            ${itensIlhas}
+                            ${ilhasOrdenadas.map(([ilha, qtd]) => `
+                                <div class="flex items-center justify-between bg-gray-50 border border-gray-100 rounded-lg px-3 py-2 text-sm">
+                                    <span class="text-gray-700 font-medium">${ilha}</span>
+                                    <span class="font-bold text-blue-900">${qtd}</span>
+                                </div>
+                            `).join("")}
                         </div>
                     </div>
                 </div>
             `;
         }
 
+        function renderizarConteudoAba(dep) {
+            if (abaAtiva === "historico") {
+                const h = dep.historico || {};
+                const periodos = (h.periodos || []).map(p => `<li class="text-xs text-gray-700">• ${p}</li>`).join("") || `<li class="text-xs text-gray-400">Sem registo</li>`;
+                const atuais = (h.comissoes_atuais || []).map(c => `<li class="text-xs text-emerald-800 bg-emerald-50 border border-emerald-100 rounded-lg px-2.5 py-1.5">${c}</li>`).join("") || `<li class="text-xs text-gray-400">Nenhuma comissão atual registada</li>`;
+                const anteriores = (h.comissoes_anteriores || []).map(c => `<li class="text-xs text-gray-600">• ${c}</li>`).join("") || `<li class="text-xs text-gray-400">Sem registo</li>`;
+                const intervencoes = (h.intervencoes || []).map(item => `
+                    <div class="p-3 bg-white rounded-lg border border-gray-100">
+                        <span class="text-[11px] font-bold text-blue-800">${item.data}</span>
+                        <p class="text-xs text-gray-700 mt-1 leading-relaxed">${item.assunto}</p>
+                    </div>
+                `).join("") || `<p class="text-xs text-gray-400">Sem intervenções registadas.</p>`;
+                const requerimentos = (h.requerimentos || []).map(item => `
+                    <div class="p-3 bg-white rounded-lg border border-gray-100">
+                        <span class="text-[11px] font-bold text-blue-800">${item.data}</span>
+                        <p class="text-xs text-gray-700 mt-1 leading-relaxed">${item.assunto}</p>
+                    </div>
+                `).join("") || `<p class="text-xs text-gray-400">Sem requerimentos registados.</p>`;
 
+                return `
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 space-y-3">
+                            <div>
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-blue-900 mb-1.5">Períodos de Funções</h5>
+                                <ul class="space-y-1">${periodos}</ul>
+                            </div>
+                            <hr class="border-gray-200">
+                            <div>
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-emerald-900 mb-1.5">Comissões Atuais</h5>
+                                <ul class="space-y-1.5">${atuais}</ul>
+                            </div>
+                            <hr class="border-gray-200">
+                            <div>
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-600 mb-1.5">Comissões Anteriores</h5>
+                                <ul class="space-y-1">${anteriores}</ul>
+                            </div>
+                        </div>
 
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 space-y-2 max-h-80 overflow-y-auto">
+                            <h5 class="text-xs font-bold uppercase tracking-wider text-blue-900 sticky top-0 bg-gray-50 pb-1">
+                                Intervenções em Plenário (${(h.intervencoes || []).length})
+                            </h5>
+                            <div class="space-y-2">${intervencoes}</div>
+                        </div>
 
-        function alternarExpansao(index) {
-            // Se o utilizador clicar no mesmo, fecha; se clicar noutro, fecha o anterior e abre o novo
-            if (deputadoSelecionadoIndex === index) {
-                deputadoSelecionadoIndex = null;
-            } else {
-                deputadoSelecionadoIndex = index;
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 space-y-2 max-h-80 overflow-y-auto">
+                            <h5 class="text-xs font-bold uppercase tracking-wider text-blue-900 sticky top-0 bg-gray-50 pb-1">
+                                Requerimentos (${(h.requerimentos || []).length})
+                            </h5>
+                            <div class="space-y-2">${requerimentos}</div>
+                        </div>
+                    </div>
+                `;
             }
-            renderizarDeputados(deputados);
+
+            if (abaAtiva === "biografia") {
+                const b = dep.biografia || {};
+                const campos = [
+                    ["Nome Completo", b.nome_completo],
+                    ["Data de Nascimento", b.nascimento],
+                    ["Estado Civil", b.estado_civil],
+                    ["Habilitações Literárias", b.habilitacoes],
+                    ["Profissão", b.profissao],
+                    ["Regime de Exclusividade", b.exclusividade],
+                    ["Cargo(s) que Desempenha", b.cargos],
+                    ["Contacto Oficial", b.email ? `<a href="mailto:${b.email}" class="text-blue-700 underline">${b.email}</a>` : ""]
+                ];
+                return `
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                        ${campos.map(([label, val]) => `
+                            <div class="bg-gray-50 p-3.5 rounded-xl border border-gray-100">
+                                <span class="block text-[11px] font-bold uppercase tracking-wider text-gray-400">${label}</span>
+                                <span class="block text-sm font-medium text-gray-800 mt-1">${val || "—"}</span>
+                            </div>
+                        `).join("")}
+                    </div>
+                `;
+            }
+
+            if (abaAtiva === "interesses") {
+                const it = dep.interesses || {};
+                const campos = [
+                    ["Cargo(s) Exercido(s)", it.cargos_exercidos],
+                    ["Cargos Sociais", it.cargos_sociais],
+                    ["Sociedades", it.sociedades],
+                    ["Serviços Prestados", it.servicos],
+                    ["Apoios ou Benefícios", it.apoios],
+                    ["Outras Situações", it.outras]
+                ];
+                return `
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        ${campos.map(([label, val]) => `
+                            <div class="bg-gray-50 p-3.5 rounded-xl border border-gray-100">
+                                <span class="block text-[11px] font-bold uppercase tracking-wider text-blue-900">${label}</span>
+                                <p class="text-xs text-gray-700 mt-1 leading-relaxed">${val || "Nada a observar"}</p>
+                            </div>
+                        `).join("")}
+                    </div>
+                `;
+            }
+
+            if (abaAtiva === "vencimentos") {
+                const vencs = dep.vencimentos || [];
+                if (vencs.length === 0) return `<p class="text-xs text-gray-400">Sem registo de vencimentos.</p>`;
+                return `
+                    <div class="max-h-72 overflow-y-auto rounded-xl border border-gray-200">
+                        <table class="w-full text-left text-xs">
+                            <thead class="bg-gray-100 text-gray-600 uppercase sticky top-0">
+                                <tr>
+                                    <th class="px-4 py-2.5">Ano</th>
+                                    <th class="px-4 py-2.5">Mês</th>
+                                    <th class="px-4 py-2.5">Valor Líquido</th>
+                                    <th class="px-4 py-2.5">Observações</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 bg-white">
+                                ${vencs.map(v => `
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="px-4 py-2 font-semibold text-gray-800">${v.ano}</td>
+                                        <td class="px-4 py-2 text-gray-700">${v.mes}</td>
+                                        <td class="px-4 py-2 font-bold text-blue-900">${v.liquido}</td>
+                                        <td class="px-4 py-2 text-gray-500">${v.obs || "—"}</td>
+                                    </tr>
+                                `).join("")}
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+            }
+
+            if (abaAtiva === "presencas") {
+                const pres = dep.presencas || [];
+                const totalSessoes = pres.length;
+                const presentes = pres.filter(p => p.estado.toLowerCase().includes("presente")).length;
+                const taxa = totalSessoes > 0 ? Math.round((presentes / totalSessoes) * 100) : 0;
+
+                return `
+                    <div class="space-y-3">
+                        <div class="flex flex-wrap items-center gap-4 bg-gray-50 p-3.5 rounded-xl border border-gray-100">
+                            <div>
+                                <span class="text-[11px] uppercase font-bold text-gray-400 block">Assiduidade em Plenário</span>
+                                <span class="text-lg font-extrabold text-emerald-700">${taxa}%</span>
+                                <span class="text-xs text-gray-500">(${presentes} de ${totalSessoes} sessões)</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 max-h-60 overflow-y-auto pr-1">
+                            ${pres.map(p => {
+                                const ok = p.estado.toLowerCase().includes("presente");
+                                return `
+                                    <div class="px-3 py-2 rounded-lg border text-xs flex items-center justify-between ${ok ? 'bg-emerald-50/60 border-emerald-100 text-emerald-900' : 'bg-amber-50 border-amber-200 text-amber-900'}">
+                                        <span class="font-semibold">${p.data}</span>
+                                        <span class="text-[11px]">${p.estado}</span>
+                                    </div>
+                                `;
+                            }).join("")}
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        function renderizarDeputados(lista) {
+            const grelha = document.getElementById("grelhaDeputados");
+            grelha.innerHTML = "";
+
+            if (lista.length === 0) {
+                grelha.innerHTML = `<p class="col-span-full text-center text-gray-500 py-8">Nenhum deputado encontrado com estes filtros.</p>`;
+                return;
+            }
+
+            const abas = [
+                ["historico", "Atividade Parlamentar"],
+                ["biografia", "Registo Biográfico"],
+                ["interesses", "Registo de Interesses"],
+                ["vencimentos", "Vencimentos"],
+                ["presencas", "Presenças em Plenário"]
+            ];
+
+            lista.forEach((dep) => {
+                const classeCor = coresPartidos[dep.partido] || "bg-gray-100 text-gray-800 border border-gray-200";
+                const estaSelecionado = deputadoSelecionadoId === dep.id;
+
+                const card = `
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden border ${estaSelecionado ? 'col-span-full border-blue-500 ring-2 ring-blue-400/50' : 'border-gray-100 hover:shadow-xl hover:-translate-y-1'} transition-all duration-300">
+                        <div onclick="alternarExpansao('${dep.id}')" class="${estaSelecionado ? 'flex flex-col sm:flex-row gap-6 p-6 cursor-pointer bg-gradient-to-r from-gray-50/80 to-white' : 'cursor-pointer'}">
+                            <img src="${dep.foto}" alt="${dep.nome}" class="${estaSelecionado ? 'w-32 h-44 rounded-xl shadow-sm' : 'w-full h-72'} object-cover object-top bg-gray-200 flex-shrink-0">
+                            <div class="${estaSelecionado ? 'flex-1 flex flex-col justify-between' : 'p-4'}">
+                                <div>
+                                    <div class="flex justify-between items-start">
+                                        <span class="inline-block px-2.5 py-1 text-xs font-bold rounded-md mb-2 ${classeCor}">${dep.partido}</span>
+                                        ${estaSelecionado ? '<span class="text-gray-400 hover:text-gray-700 text-2xl font-bold leading-none px-2">&times;</span>' : ''}
+                                    </div>
+                                    <h3 class="${estaSelecionado ? 'text-2xl font-bold text-gray-900' : 'font-bold text-lg text-gray-900'}">${dep.nome}</h3>
+                                    <p class="${estaSelecionado ? 'text-sm text-gray-600 mt-1' : 'text-xs text-gray-500 mt-2'}">Círculo: <span class="font-semibold text-gray-800">${dep.circulo}</span></p>
+                                </div>
+                                ${estaSelecionado ? `
+                                    <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-gray-100" onclick="event.stopPropagation()">
+                                        ${abas.map(([chave, label]) => `
+                                            <button onclick="mudarAba('${chave}')" class="px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${abaAtiva === chave ? 'bg-blue-900 text-white shadow-xs' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}">
+                                                ${label}
+                                            </button>
+                                        `).join("")}
+                                    </div>
+                                ` : ''}
+                            </div>
+                        </div>
+
+                        ${estaSelecionado ? `
+                            <div class="px-6 pb-6 pt-2 border-t border-gray-100">
+                                ${renderizarConteudoAba(dep)}
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+                grelha.innerHTML += card;
+            });
+        }
+
+        function alternarExpansao(id) {
+            if (deputadoSelecionadoId === id) {
+                deputadoSelecionadoId = null;
+            } else {
+                deputadoSelecionadoId = id;
+                abaAtiva = "historico";
+            }
+            renderizarDeputados(listaAtual);
+        }
+
+        function mudarAba(novaAba) {
+            abaAtiva = novaAba;
+            renderizarDeputados(listaAtual);
         }
 
         function filtrarDeputados() {
-            deputadoSelecionadoIndex = null; // Reseta a expansão ao mudar de filtro
+            deputadoSelecionadoId = null;
             const partidoSelecionado = document.getElementById("filtroPartido").value;
             const circuloSelecionado = document.getElementById("filtroCirculo").value;
 
-            const filtrados = deputados.filter(dep => {
+            listaAtual = deputados.filter(dep => {
                 const matchPartido = partidoSelecionado === "" || dep.partido === partidoSelecionado;
                 const matchCirculo = circuloSelecionado === "" || dep.circulo === circuloSelecionado;
                 return matchPartido && matchCirculo;
             });
 
-            renderizarDeputados(filtrados);
+            renderizarDeputados(listaAtual);
         }
 
-        // Inicializar a aplicação ao abrir a página
         carregarDeputados();
     </script>
+
 </body>
 </html>

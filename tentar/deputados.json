@@ -1,0 +1,344 @@
+[
+    {
+        "nome": "Adolfo Vasconcelos",
+        "partido": "PSD",
+        "circulo": "Graciosa",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/AdolfoVasconcelos.jpg"
+    },
+    {
+        "nome": "Ana Jorge",
+        "partido": "PSD",
+        "circulo": "Pico",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/AnaJorge.jpg"
+    },
+    {
+        "nome": "António Lima",
+        "partido": "BE",
+        "circulo": "Compensação",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/AntonioLima.jpg"
+    },
+    {
+        "nome": "Berto Messias",
+        "partido": "PS",
+        "circulo": "Terceira",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/BertoMessias.jpg"
+    },
+    {
+        "nome": "Carlos Freitas",
+        "partido": "PSD",
+        "circulo": "Pico",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/CarlosFreitas.jpg"
+    },
+    {
+        "nome": "Carlos Rodrigues",
+        "partido": "PSD",
+        "circulo": "Santa Maria",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/CarlosRodrigues.jpg"
+    },
+    {
+        "nome": "Carlos Silva",
+        "partido": "PS",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/CarlosSilva.jpg"
+    },
+    {
+        "nome": "Cristina Calisto",
+        "partido": "PS",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/CristinaCalisto.jpg"
+    },
+    {
+        "nome": "Dora Valadão",
+        "partido": "PS",
+        "circulo": "Flores",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/DoraValadao.jpg"
+    },
+    {
+        "nome": "Flávio Soares",
+        "partido": "PSD",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/FlavioSoares.jpg"
+    },
+    {
+        "nome": "Francisco Gaspar",
+        "partido": "PSD",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/FranciscoGaspar.jpg"
+    },
+    {
+        "nome": "Francisco Lima",
+        "partido": "CH",
+        "circulo": "Terceira",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/FranciscoLima.jpg"
+    },
+    {
+        "nome": "Gualberto Rita",
+        "partido": "PS",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/GualbertoRita.jpg"
+    },
+    {
+        "nome": "Hélia Cardoso",
+        "partido": "CH",
+        "circulo": "Compensação",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/HeliaCardoso.jpg"
+    },
+    {
+        "nome": "Hugo Parente",
+        "partido": "PSD",
+        "circulo": "Faial",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/HugoParente.jpg"
+    },
+    {
+        "nome": "Inês Sá",
+        "partido": "PS",
+        "circulo": "Faial",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/InesSa.jpg"
+    },
+    {
+        "nome": "Isabel Teixeira",
+        "partido": "PS",
+        "circulo": "São Jorge",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/IsabelTeixeira.jpg"
+    },
+    {
+        "nome": "Joana Pombo Tavares",
+        "partido": "PS",
+        "circulo": "Santa Maria",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/JoanaPomboTavares.jpg"
+    },
+    {
+        "nome": "João Bruto da Costa",
+        "partido": "PSD",
+        "circulo": "Graciosa",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/JoaoBrutodaCosta.jpg"
+    },
+    {
+        "nome": "João Mendonça",
+        "partido": "PPM",
+        "circulo": "Corvo",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/JoaoMendonca.jpg"
+    },
+    {
+        "nome": "João Vasco Costa",
+        "partido": "PS",
+        "circulo": "Santa Maria",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/JoaoVascoCosta.jpg"
+    },
+    {
+        "nome": "Joaquim Machado",
+        "partido": "PSD",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/JoaquimMachado.jpg"
+    },
+    {
+        "nome": "José Ávila",
+        "partido": "PS",
+        "circulo": "Graciosa",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/JoseAvila.jpg"
+    },
+    {
+        "nome": "José Eduardo",
+        "partido": "PS",
+        "circulo": "Flores",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/JoseEduardo.jpg"
+    },
+    {
+        "nome": "José Leal",
+        "partido": "PSD",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/JoseLeal.jpg"
+    },
+    {
+        "nome": "José Miguel Toste",
+        "partido": "PS",
+        "circulo": "Terceira",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/JoseMiguelToste.jpg"
+    },
+    {
+        "nome": "José Pacheco",
+        "partido": "CH",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/JosePacheco.jpg"
+    },
+    {
+        "nome": "José Sousa",
+        "partido": "CH",
+        "circulo": "Compensação",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/JoseSousa.jpg"
+    },
+    {
+        "nome": "Lubélio Mendonça",
+        "partido": "PS",
+        "circulo": "Corvo",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/LubelioMendonca.jpg"
+    },
+    {
+        "nome": "Lucio Rodrigues",
+        "partido": "PS",
+        "circulo": "Faial",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/LucioRodrigues.jpg"
+    },
+    {
+        "nome": "Luís Garcia",
+        "partido": "PSD",
+        "circulo": "Faial",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/LuisGarcia.jpg"
+    },
+    {
+        "nome": "Luis Raposo",
+        "partido": "PSD",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/LuisRaposo.jpg"
+    },
+    {
+        "nome": "Luís Silveira",
+        "partido": "CDS-PP",
+        "circulo": "São Jorge",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/LuisSilveira.jpg"
+    },
+    {
+        "nome": "Luis Soares",
+        "partido": "PSD",
+        "circulo": "Terceira",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/LuisSoares.jpg"
+    },
+    {
+        "nome": "Luís Vieira Leal",
+        "partido": "PS",
+        "circulo": "Terceira",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/LuisVieiraLeal.jpg"
+    },
+    {
+        "nome": "Márcia Goulart",
+        "partido": "PSD",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/MarciaGoulart.jpg"
+    },
+    {
+        "nome": "Marco Martins",
+        "partido": "PS",
+        "circulo": "Terceira",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/MarcoMartins.jpg"
+    },
+    {
+        "nome": "Maria Eugénia Leal",
+        "partido": "PSD",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/MariaEugeniaLeal.jpg"
+    },
+    {
+        "nome": "Mário Tomé",
+        "partido": "PS",
+        "circulo": "Pico",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/MarioTome.jpg"
+    },
+    {
+        "nome": "Marlene Damião",
+        "partido": "PS",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/MarleneDamiao.jpg"
+    },
+    {
+        "nome": "Marta Matos",
+        "partido": "PS",
+        "circulo": "Pico",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/MartaMatos.jpg"
+    },
+    {
+        "nome": "Nídia Inácio",
+        "partido": "PSD",
+        "circulo": "Terceira",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/NidiaInacio.jpg"
+    },
+    {
+        "nome": "Nuno Barata",
+        "partido": "IL",
+        "circulo": "Compensação",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/NunoBarata.jpg"
+    },
+    {
+        "nome": "Olivéria Santos",
+        "partido": "CH",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/OliveriaSantos.jpg"
+    },
+    {
+        "nome": "Patrícia Miranda",
+        "partido": "PS",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/PatriciaMiranda.jpg"
+    },
+    {
+        "nome": "Paulo Chaves",
+        "partido": "PSD",
+        "circulo": "Terceira",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/PauloChaves.jpg"
+    },
+    {
+        "nome": "Paulo Gomes",
+        "partido": "PSD",
+        "circulo": "Terceira",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/PauloGomes.jpg"
+    },
+    {
+        "nome": "Paulo Silveira",
+        "partido": "PSD",
+        "circulo": "São Jorge",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/PauloSilveira.jpg"
+    },
+    {
+        "nome": "Paulo Simões",
+        "partido": "PSD",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/PauloSimoes.jpg"
+    },
+    {
+        "nome": "Pedro Neves",
+        "partido": "PAN",
+        "circulo": "Compensação",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/PedroNeves.jpg"
+    },
+    {
+        "nome": "Pedro Pinto",
+        "partido": "CDS-PP",
+        "circulo": "Terceira",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/PedroPinto.jpg"
+    },
+    {
+        "nome": "Ricardo Vieira",
+        "partido": "PSD",
+        "circulo": "Flores",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/RicardoVieira.jpg"
+    },
+    {
+        "nome": "Ruben Cabral",
+        "partido": "PSD",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/RubenCabral.jpg"
+    },
+    {
+        "nome": "Russell Sousa",
+        "partido": "PS",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/RussellSousa.jpg"
+    },
+    {
+        "nome": "Sabrina Furtado",
+        "partido": "PSD",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/SabrinaFurtado.jpg"
+    },
+    {
+        "nome": "Sandra Costa Dias",
+        "partido": "PS",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/SandraCostaDias.jpg"
+    },
+    {
+        "nome": "Vasco Cordeiro",
+        "partido": "PS",
+        "circulo": "São Miguel",
+        "foto": "https://online.alra.pt/deputadosEcra/images/Deputados/VascoCordeiro.jpg"
+    }
+]

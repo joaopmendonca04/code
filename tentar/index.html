@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deputados da ALRAA - Participação Cidadã Açores</title>
+    <!-- Tailwind CSS para um design moderno e limpo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Cabeçalho -->
+        <header class="mb-8 text-center">
+            <h1 class="text-3xl font-bold text-blue-900">Deputados da ALRAA</h1>
+            <p class="text-gray-600 mt-2">Conheça os representantes eleitos na Assembleia Legislativa da Região Autónoma dos Açores.</p>
+        </header>
+
+        <!-- Filtros -->
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+            <select id="filtroPartido" class="p-2 border rounded-lg shadow-sm bg-white" onchange="filtrarDeputados()">
+                <option value="">Todos os Partidos</option>
+                <option value="PSD">PSD</option>
+                <option value="PS">PS</option>
+                <option value="CH">CHEGA</option>
+                <option value="CDS-PP">CDS-PP</option>
+                <option value="IL">IL</option>
+                <option value="BE">BE</option>
+                <option value="PAN">PAN</option>
+                <option value="PPM">PPM</option>
+            </select>
+
+            <select id="filtroCirculo" class="p-2 border rounded-lg shadow-sm bg-white" onchange="filtrarDeputados()">
+                <option value="">Todas as Ilhas / Círculos</option>
+                <option value="São Miguel">São Miguel</option>
+                <option value="Terceira">Terceira</option>
+                <option value="Pico">Pico</option>
+                <option value="Faial">Faial</option>
+                <option value="São Jorge">São Jorge</option>
+                <option value="Santa Maria">Santa Maria</option>
+                <option value="Graciosa">Graciosa</option>
+                <option value="Flores">Flores</option>
+                <option value="Corvo">Corvo</option>
+                <option value="Compensação">Círculo de Compensação</option>
+            </select>
+        </div>
+
+        <!-- Grelha de Deputados (Expandível) -->
+        <div id="grelhaDeputados" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Os cartões e painéis expansíveis serão injetados aqui via JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        // Variáveis globais
+        let deputados = [];
+        let deputadoSelecionadoIndex = null; // Guarda qual está atualmente expandido
+
+        // Mapeamento oficial das cores dos partidos representados na ALRAA
+        const coresPartidos = {
+            "PSD": "bg-orange-100 text-orange-800 border border-orange-200",
+            "PS": "bg-rose-100 text-rose-800 border border-rose-200",
+            "CH": "bg-blue-100 text-blue-900 border border-blue-200",
+            "CDS-PP": "bg-sky-100 text-sky-800 border border-sky-200",
+            "IL": "bg-amber-100 text-amber-900 border border-amber-200",
+            "BE": "bg-red-100 text-red-800 border border-red-200",
+            "PAN": "bg-emerald-100 text-emerald-800 border border-emerald-200",
+            "PPM": "bg-blue-50 text-blue-700 border border-blue-200"
+        };
+
+        // Função para ir buscar o ficheiro JSON gerado pelo Python
+        async function carregarDeputados() {
+            try {
+                const response = await fetch('deputados.json');
+                deputados = await response.json();
+                renderizarDeputados(deputados);
+            } catch (error) {
+                console.error("Erro ao carregar o ficheiro JSON:", error);
+                document.getElementById("grelhaDeputados").innerHTML = 
+                    `<p class="col-span-full text-center text-red-500 py-8">Erro ao carregar os dados dos deputados. Certifica-te de que o script Python foi executado e que estás a usar um servidor local (Live Server).</p>`;
+            }
+        }
+
+        function renderizarDeputados(lista) {
+            const grelha = document.getElementById("grelhaDeputados");
+            grelha.innerHTML = "";
+
+            if (lista.length === 0) {
+                grelha.innerHTML = `<p class="col-span-full text-center text-gray-500 py-8">Nenhum deputado encontrado com estes filtros.</p>`;
+                return;
+            }
+
+            lista.forEach((dep, index) => {
+                const classeCor = coresPartidos[dep.partido] || "bg-gray-100 text-gray-800 border border-gray-200";
+                const estaSelecionado = deputadoSelecionadoIndex === index;
+
+                // O cartão principal mantém sempre a mesma estrutura base (foto vertical em cima, nome e partido alinhados)
+                // Se estiver selecionado, expande-se a ocupar a largura total e abre a gaveta de detalhes em baixo de forma limpa.
+                const card = `
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden border ${estaSelecionado ? 'col-span-full border-blue-500 ring-2 ring-blue-400' : 'border-gray-100 hover:shadow-xl hover:-translate-y-1'} transition-all duration-300">
+                        <!-- Cabeçalho do Cartão / Zona Clicável -->
+                        <div onclick="alternarExpansao(${index})" class="${estaSelecionado ? 'flex flex-col md:flex-row gap-6 p-6 md:p-8 cursor-pointer' : 'cursor-pointer'}">
+                            <img src="${dep.foto}" alt="${dep.nome}" class="${estaSelecionado ? 'w-36 h-48 md:w-44 md:h-56' : 'w-full h-72'} object-cover object-top bg-gray-200 rounded-lg flex-shrink-0 transition-all duration-300">
+                            
+                            <div class="${estaSelecionado ? 'flex-1 flex flex-col justify-between' : 'p-4'}">
+                                <div>
+                                    <div class="flex justify-between items-start">
+                                        <span class="inline-block px-2.5 py-1 text-xs font-bold rounded-md mb-2 ${classeCor}">${dep.partido}</span>
+                                        ${estaSelecionado ? '<span class="text-gray-400 hover:text-gray-700 text-2xl font-bold px-2">&times;</span>' : ''}
+                                    </div>
+                                    <h3 class="${estaSelecionado ? 'text-2xl font-bold text-gray-900 mt-1' : 'font-bold text-lg text-gray-900'}">${dep.nome}</h3>
+                                    <p class="${estaSelecionado ? 'text-sm text-gray-500 mt-2' : 'text-xs text-gray-500 mt-2'}">Círculo: <span class="font-semibold text-gray-700">${dep.circulo}</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secção Expandida (Só aparece suavemente para o selecionado) -->
+                        ${estaSelecionado ? `
+                            <div class="px-6 pb-6 md:px-8 md:pb-8 pt-0 border-t border-gray-100 mt-4 animate-fadeIn">
+                                <div class="bg-gray-50 p-5 rounded-xl border border-gray-100 space-y-3 mt-4">
+                                    <h4 class="text-xs font-bold uppercase tracking-wider text-blue-900">Informações e Atividade Parlamentar</h4>
+                                    <p class="text-sm text-gray-600 italic">Podes adicionar aqui dados detalhados como biografia, comissões parlamentares ou contactos.</p>
+                                </div>
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+                grelha.innerHTML += card;
+            });
+        }
+
+
+
+        function alternarExpansao(index) {
+            // Se o utilizador clicar no mesmo, fecha; se clicar noutro, fecha o anterior e abre o novo
+            if (deputadoSelecionadoIndex === index) {
+                deputadoSelecionadoIndex = null;
+            } else {
+                deputadoSelecionadoIndex = index;
+            }
+            renderizarDeputados(deputados);
+        }
+
+        function filtrarDeputados() {
+            deputadoSelecionadoIndex = null; // Reseta a expansão ao mudar de filtro
+            const partidoSelecionado = document.getElementById("filtroPartido").value;
+            const circuloSelecionado = document.getElementById("filtroCirculo").value;
+
+            const filtrados = deputados.filter(dep => {
+                const matchPartido = partidoSelecionado === "" || dep.partido === partidoSelecionado;
+                const matchCirculo = circuloSelecionado === "" || dep.circulo === circuloSelecionado;
+                return matchPartido && matchCirculo;
+            });
+
+            renderizarDeputados(filtrados);
+        }
+
+        // Inicializar a aplicação ao abrir a página
+        carregarDeputados();
+    </script>
+</body>
+</html>
